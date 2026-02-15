@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://bunobm0luvx26"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_lc1oi"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_37kl0"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_8uh7m"]
+sky_material = SubResource("ProceduralSkyMaterial_37kl0")
+
+[sub_resource type="Environment" id="Environment_6uqi0"]
+background_mode = 2
+sky = SubResource("Sky_8uh7m")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37kl0"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lc1oi"]
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8od7v"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qc4db"]
+
+[node name="Test" type="Node3D" unique_id=475538267]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1074031296]
+environment = SubResource("Environment_6uqi0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=804178397]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="ProtoController" parent="." unique_id=1870830449 instance=ExtResource("1_lc1oi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+can_jump = false
+
+[node name="Node3D" type="CSGCombiner3D" parent="." unique_id=1226007905]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node3D" unique_id=814871916]
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node3D" unique_id=1710601368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Node3D" unique_id=1478810572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 9.5)
+use_collision = true
+size = Vector3(20, 5, 1)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Node3D" unique_id=907640512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -9.5)
+use_collision = true
+size = Vector3(20, 5, 1)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Node3D" unique_id=70775018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.5, 3, 0)
+use_collision = true
+size = Vector3(1, 5, 20)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Node3D" unique_id=602392780]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 3, 0)
+use_collision = true
+size = Vector3(1, 5, 20)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=821819145]
+transform = Transform3D(2.8040934, 0, 0, 0, 1.0503602, 0, 0, 0, 1, 0, 0.9632721, -8.516712)
+operation = 2
+use_collision = true
+material = SubResource("StandardMaterial3D_37kl0")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D" unique_id=532286794]
+transform = Transform3D(0.8334593, 0, 0, 0, 0.86436886, 0, 0, 0, 1, 0, -0.024859011, 0.05065441)
+operation = 2
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=410892768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026633948, 1.8879216, -9.007095)
+size = Vector3(0.8, 0.8, 0.8)
+material = SubResource("StandardMaterial3D_lc1oi")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="." unique_id=2142193444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026633948, 1.8879216, -8.93738)
+size = Vector3(0.7, 0.7, 0.7)
+material = SubResource("StandardMaterial3D_8od7v")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="." unique_id=159964409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3326109, 1.49998, -8.300562)
+size = Vector3(0.7, 0.04, 0.4)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=177616343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48354, 1.49998, -8.300562)
+size = Vector3(0.1, 0.04, 0.2)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=1458396667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9183648, 0.73120975, -8.488258)
+use_collision = true
+radius = 0.173
+height = 0.551
+material = SubResource("StandardMaterial3D_qc4db")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D" unique_id=1645254588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09017205, 0)
+operation = 2
+radius = 0.133
+height = 0.406
+material = SubResource("StandardMaterial3D_qc4db")

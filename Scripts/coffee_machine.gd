@@ -7,3 +7,9 @@ func interact():
 	super()
 	var coffe_cup = coffee_cup_scene.instantiate()
 	coffee_place.add_child(coffe_cup)
+	TaskManager.current_task.steps[TaskManager.current_task.step_index].target_id = ""
+	self.set_highlight(false)
+
+	TaskManager.on_step_finished(TaskManager.current_task.step_index)
+	
+	# Faire couler le café

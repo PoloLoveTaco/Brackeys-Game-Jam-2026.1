@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dur77ksffk34b"]
+
+[ext_resource type="PackedScene" uid="uid://b5y4tmorqwpoi" path="res://Assets/FBX/Separated/CoffeeMachine.fbx" id="1_pifhd"]
+
+[node name="coffee_machine" type="Node3D" unique_id=1798506635]
+
+[node name="CoffeeMachine" parent="." unique_id=1967586519 instance=ExtResource("1_pifhd")]

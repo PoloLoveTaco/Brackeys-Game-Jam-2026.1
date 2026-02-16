@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://q4gle0vjq7n8"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_no04e"]
+[ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="2_vu6mp"]
+[ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="3_1dxvv"]
+[ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_xodqj"]
+[ext_resource type="PackedScene" uid="uid://dck5cd7kdvv58" path="res://Assets/FBX/Separated/Wall_Medium.fbx" id="5_pkcnf"]
+[ext_resource type="PackedScene" uid="uid://dur77ksffk34b" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="6_yxfp5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_1dxvv"]
+sky_material = SubResource("ProceduralSkyMaterial_vu6mp")
+
+[sub_resource type="Environment" id="Environment_xodqj"]
+background_mode = 2
+sky = SubResource("Sky_1dxvv")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Office A" type="Node3D" unique_id=1992150046]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1204884149]
+environment = SubResource("Environment_xodqj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=140522368]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Node3D" type="CSGCombiner3D" parent="." unique_id=1692797842]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Node3D" unique_id=40152670]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Node3D" unique_id=975237944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="ProtoController" parent="." unique_id=1870830449 instance=ExtResource("1_no04e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.33)
+can_jump = false
+
+[node name="Desk Office A" parent="." unique_id=1649187544 instance=ExtResource("2_vu6mp")]
+
+[node name="Chair Office A" parent="." unique_id=1654590215 instance=ExtResource("3_1dxvv")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -0.22152644, 0, 0.28450072)
+
+[node name="Fan A" parent="." unique_id=1476468136 instance=ExtResource("4_xodqj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4338453, 0)
+
+[node name="Wall_Medium" parent="." unique_id=964775726 instance=ExtResource("5_pkcnf")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="Wall_Medium2" parent="." unique_id=832791810 instance=ExtResource("5_pkcnf")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="Wall_Medium3" parent="." unique_id=1046610591 instance=ExtResource("5_pkcnf")]
+transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, -10, 0, 10.004844)
+
+[node name="Wall_Medium4" parent="." unique_id=609254244 instance=ExtResource("5_pkcnf")]
+transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, 10, 0, 10.031417)
+
+[node name="coffee_machine" parent="." unique_id=1798506635 instance=ExtResource("6_yxfp5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9135902, -9)

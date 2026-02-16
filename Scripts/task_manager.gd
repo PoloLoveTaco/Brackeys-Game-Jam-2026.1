@@ -7,8 +7,15 @@ signal new_task_assigned(task: TaskData)
 signal anomaly_triggered
 signal task_ui_update
 
+var tasks = [
+	preload("res://Resources/Tasks/take_a_coffee.tres"),
+	preload("res://Resources/Tasks/print_file.tres")
+]
+var task_index = 0
+
 func _init() -> void:
-	current_task = preload("res://Resources/Tasks/take_a_coffee.tres")
+	current_task = tasks[task_index]
+	current_task.task_completed.connect(on_task_finished)
 
 func assign_task(task_res: TaskData):
 	current_task = task_res
@@ -19,3 +26,10 @@ func on_step_finished(step_index: int):
 	current_task.complete_step(step_index)
 	task_ui_update.emit()
 	anomaly_triggered.emit()
+	
+func on_task_finished():
+	completed_tasks_count += 1
+	task_index += 1
+	current_task = tasks[task_index]
+	current_task.task_completed.connect(on_task_finished)
+	task_ui_update.emit()

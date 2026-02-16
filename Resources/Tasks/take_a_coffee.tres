@@ -17,6 +17,6 @@ steps = Array[Dictionary]([{
 }, {
 "description": "Récupérer le café dans la machine à café",
 "is_done": false,
-"target_id": "coffe_machine"
+"target_id": "coffee_cup"
 }])
 metadata/_custom_type_script = "uid://bxnax6nydvu6e"

@@ -103,6 +103,8 @@ func _process(delta: float) -> void:
 					_clear_highlight()
 					col.set_highlight(true)
 					last_hovered_item = col
+			else:
+				_clear_highlight()
 			return
 	
 	_clear_highlight()

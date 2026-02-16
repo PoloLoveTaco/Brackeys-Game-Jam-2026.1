@@ -26,6 +26,13 @@ albedo_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qc4db"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lc1oi"]
+bg_color = Color(0, 0, 0, 0.5137255)
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
+
 [node name="Test" type="Node3D" unique_id=475538267]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1074031296]
@@ -112,3 +119,65 @@ operation = 2
 radius = 0.133
 height = 0.406
 material = SubResource("StandardMaterial3D_qc4db")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=261922610]
+
+[node name="TaskPanel" type="Control" parent="CanvasLayer" unique_id=507530971]
+custom_minimum_size = Vector2(300, 350)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -340.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = 390.0
+grow_horizontal = 0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TaskPanel" unique_id=1794853812]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lc1oi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TaskPanel/Panel" unique_id=1784812885]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1269307769]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "Current Task"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=2161725]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_font_sizes/font_size = 24
+text = "Delete corrupted file on your desktop"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1592386922]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_font_sizes/font_size = 24
+text = "[  ] Go to your PC
+[  ] Grab the file in the garbage application
+[  ] Get out of your PC"
+vertical_alignment = 1
+autowrap_mode = 3

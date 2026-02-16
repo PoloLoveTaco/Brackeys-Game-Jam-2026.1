@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dpi8bw3btjwdw"]
+
+[ext_resource type="PackedScene" uid="uid://clb6uq8aicvat" path="res://Assets/FBX/Separated/Chair_Office_Base_A.fbx" id="1_4b7rf"]
+[ext_resource type="PackedScene" uid="uid://dciyjklep4vcd" path="res://Assets/FBX/Separated/Chair_Office_Bottom.fbx" id="2_tmxig"]
+[ext_resource type="PackedScene" uid="uid://dc755hcqmrjqs" path="res://Assets/FBX/Separated/Chair_Office_Wheel_Copy.fbx" id="3_ksxql"]
+
+[node name="Chair Office A" type="Node3D" unique_id=1654590215]
+
+[node name="Chair_Office_Base_A" parent="." unique_id=778292455 instance=ExtResource("1_4b7rf")]
+
+[node name="Chair_Office_Bottom" parent="." unique_id=1475505831 instance=ExtResource("2_tmxig")]
+
+[node name="Chair_Office_Wheel_Copy" parent="." unique_id=846294556 instance=ExtResource("3_ksxql")]
+transform = Transform3D(0.78428936, 0, -0.6203952, 0, 1, 0, 0.6203952, 0, 0.78428936, 0, 0.036919646, 0.3593971)
+
+[node name="Chair_Office_Wheel_Copy2" parent="." unique_id=1526546343 instance=ExtResource("3_ksxql")]
+transform = Transform3D(0.96452975, 0, 0.26397404, 0, 1, 0, -0.26397404, 0, 0.96452975, 0.34132084, 0.036919646, 0.11072701)
+
+[node name="Chair_Office_Wheel_Copy3" parent="." unique_id=280023654 instance=ExtResource("3_ksxql")]
+transform = Transform3D(-0.46711218, 0, -0.8841981, 0, 1, 0, 0.8841981, 0, -0.46711218, -0.34100702, 0.036919646, 0.11072701)
+
+[node name="Chair_Office_Wheel_Copy4" parent="." unique_id=466165990 instance=ExtResource("3_ksxql")]
+transform = Transform3D(0.988199, 0, -0.15317555, 0, 1, 0, 0.15317555, 0, 0.988199, -0.21267727, 0.036919646, -0.28955358)
+
+[node name="Chair_Office_Wheel_Copy5" parent="." unique_id=1586522510 instance=ExtResource("3_ksxql")]
+transform = Transform3D(0.6088861, 0, 0.7932577, 0, 1, 0, -0.7932577, 0, 0.6088861, 0.20588374, 0.036919646, -0.28955358)

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dtvs6tgxit5fv"]
+
+[ext_resource type="PackedScene" uid="uid://k311lc2dxkq2" path="res://Assets/FBX/Separated/Office_Desk_1.fbx" id="1_dg11r"]
+[ext_resource type="PackedScene" uid="uid://674d25f8s3nw" path="res://Assets/FBX/Separated/Office_Desk_drawer.fbx" id="2_223kv"]
+[ext_resource type="PackedScene" uid="uid://b0mh7vkoilkss" path="res://Assets/FBX/Separated/Computer_Case_Old.fbx" id="3_nalnp"]
+[ext_resource type="PackedScene" uid="uid://bsd0npxipw8wr" path="res://Assets/FBX/Separated/Computer_Old_Keyboard.fbx" id="4_6am4p"]
+[ext_resource type="PackedScene" uid="uid://ib0th8mivddn" path="res://Assets/FBX/Separated/Computer_Mouse.fbx" id="5_j5u1r"]
+[ext_resource type="PackedScene" uid="uid://bgg16b1bnqbd8" path="res://Assets/FBX/Separated/Computer_Old_Monitor.fbx" id="6_20b68"]
+[ext_resource type="PackedScene" uid="uid://dr08gklbna5tj" path="res://Assets/FBX/Separated/CoffeeCup.fbx" id="7_2mn7m"]
+[ext_resource type="PackedScene" uid="uid://bbi1pr2n46o38" path="res://Assets/FBX/Separated/Paper_Stray.fbx" id="8_lris3"]
+[ext_resource type="PackedScene" uid="uid://dm6unj6mvj35q" path="res://Assets/FBX/Separated/Pen.fbx" id="9_qkxkb"]
+[ext_resource type="PackedScene" uid="uid://bufw2gwabpmcg" path="res://Assets/FBX/Separated/Phone_A_Base.fbx" id="10_hco80"]
+[ext_resource type="PackedScene" uid="uid://bnu0hu678nfk" path="res://Assets/FBX/Separated/Phone_B.fbx" id="11_ra33i"]
+
+[node name="Desk Office A" type="Node3D" unique_id=1649187544]
+
+[node name="Office_Desk_1" parent="." unique_id=215258724 instance=ExtResource("1_dg11r")]
+
+[node name="Office_Desk_drawer" parent="." unique_id=1281468587 instance=ExtResource("2_223kv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42957097, 0.7300521, 0)
+
+[node name="Office_Desk_drawer2" parent="." unique_id=1910497264 instance=ExtResource("2_223kv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42957097, 0.5717122, 0)
+
+[node name="Computer_Case_Old" parent="." unique_id=3304900 instance=ExtResource("3_nalnp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5865595, 0, 0)
+
+[node name="Computer_Old_Keyboard" parent="." unique_id=1408846774 instance=ExtResource("4_6am4p")]
+transform = Transform3D(0.9935877, 0, -0.11306448, 0, 1, 0, 0.11306448, 0, 0.9935877, -0.12285593, 0.9495616, 0.2316985)
+
+[node name="Computer_Mouse" parent="." unique_id=1572506759 instance=ExtResource("5_j5u1r")]
+transform = Transform3D(0.9842203, 0, 0.17694731, 0, 1, 0, -0.17694731, 0, 0.9842203, 0.27699646, 0.9542365, 0.24611846)
+
+[node name="Computer_Old_Monitor" parent="." unique_id=776614622 instance=ExtResource("6_20b68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.940745, -0.098219365)
+
+[node name="CoffeeCup" parent="." unique_id=1532677320 instance=ExtResource("7_2mn7m")]
+transform = Transform3D(0.62760985, 0, -0.77852803, 0, 1, 0, 0.77852803, 0, 0.62760985, 0.48183295, 0.95096004, 0.17216174)
+
+[node name="Paper_Stray" parent="." unique_id=1740084796 instance=ExtResource("8_lris3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5877602, 0.9483837, -0.15409389)
+
+[node name="Pen" parent="." unique_id=1479884867 instance=ExtResource("9_qkxkb")]
+transform = Transform3D(0.9519211, -0.1955794, -0.2357858, -0.30634338, -0.60773695, -0.732673, 0, 0.76967824, -0.638432, -0.5775491, 1.0342104, 0.023029715)
+
+[node name="Phone_A_Base" parent="." unique_id=1665871538 instance=ExtResource("10_hco80")]
+transform = Transform3D(0.9537956, 0, -0.3004561, 0, 1, 0, 0.3004561, 0, 0.9537956, 0.5813033, 0.9510964, -0.16917479)
+
+[node name="Phone_B" parent="." unique_id=1599180726 instance=ExtResource("11_ra33i")]
+transform = Transform3D(-0.9565375, 0.29151928, -0.007248087, 0.052059274, 0.14625596, -0.987876, -0.28692484, -0.9453178, -0.15507555, 0.52563626, 1.0131106, -0.17386684)

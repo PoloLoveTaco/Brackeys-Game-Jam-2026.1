@@ -14,6 +14,7 @@ func complete_step(index: int):
 	if index < steps.size():
 		print("The step '" + steps[index].description + "' is completed")
 		steps[index].is_done = true
+		step_index += 1
 		check_task_status()
 
 func check_task_status():

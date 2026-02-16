@@ -4,7 +4,7 @@ class_name TaskItem
 @export var id: String
 var outline_material = preload("res://Materials/highlight_material.tres")
 
-@onready var mesh = $CoffeeCup
+@onready var mesh = $Mesh
 
 func set_highlight(enabled: bool):
 	if enabled:

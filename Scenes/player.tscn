@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bs72ogkvdd7d6"]
 
-[ext_resource type="Script" uid="uid://bs0vbp6c806n5" path="res://Addons/proto_controller/proto_controller.gd" id="1_ucva2"]
+[ext_resource type="Script" uid="uid://bs0vbp6c806n5" path="res://Scripts/player.gd" id="1_ucva2"]
 [ext_resource type="Shader" uid="uid://h1gpfdjnmyf5" path="res://Shaders/CTR.gdshader" id="2_mpk8l"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iof21"]

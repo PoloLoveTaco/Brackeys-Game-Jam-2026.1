@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="4_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_xodqj"]
 [ext_resource type="PackedScene" uid="uid://dck5cd7kdvv58" path="res://Assets/FBX/Separated/Wall_Medium.fbx" id="5_pkcnf"]
-[ext_resource type="PackedScene" uid="uid://dur77ksffk34b" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="6_yxfp5"]
 [ext_resource type="Script" uid="uid://n3ggb7uh1wtw" path="res://Scripts/task_panel.gd" id="7_ovxft"]
+[ext_resource type="PackedScene" uid="uid://bs5hnr31y3rk0" path="res://Scenes/Furniture/coffee_machine.tscn" id="8_vl3i2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -78,9 +78,6 @@ transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, -10
 [node name="Wall_Medium4" parent="." unique_id=609254244 instance=ExtResource("5_pkcnf")]
 transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, 10, 0, 10.031417)
 
-[node name="coffee_machine" parent="." unique_id=1798506635 instance=ExtResource("6_yxfp5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9135902, -9)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2135028042]
 
 [node name="TaskPanel" type="Control" parent="CanvasLayer" unique_id=1878462713]
@@ -143,3 +140,6 @@ text = "[  ] Go to your PC
 [  ] Get out of your PC"
 vertical_alignment = 1
 autowrap_mode = 3
+
+[node name="CoffeeMachine" parent="." unique_id=1354844394 instance=ExtResource("8_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.109712, 1.0859975, -9.437187)

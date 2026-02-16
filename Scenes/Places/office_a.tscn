@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://q4gle0vjq7n8"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_no04e"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_no04e"]
 [ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="2_vu6mp"]
 [ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="3_1dxvv"]
+[ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="4_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_xodqj"]
 [ext_resource type="PackedScene" uid="uid://dck5cd7kdvv58" path="res://Assets/FBX/Separated/Wall_Medium.fbx" id="5_pkcnf"]
 [ext_resource type="PackedScene" uid="uid://dur77ksffk34b" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="6_yxfp5"]
+[ext_resource type="Script" uid="uid://n3ggb7uh1wtw" path="res://Scripts/task_panel.gd" id="7_ovxft"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -19,6 +21,13 @@ background_mode = 2
 sky = SubResource("Sky_1dxvv")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl3i2"]
+bg_color = Color(0, 0, 0, 0.5137255)
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
 
 [node name="Office A" type="Node3D" unique_id=1992150046]
 
@@ -51,6 +60,9 @@ can_jump = false
 [node name="Chair Office A" parent="." unique_id=1654590215 instance=ExtResource("3_1dxvv")]
 transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -0.22152644, 0, 0.28450072)
 
+[node name="CoffeeCup" parent="." unique_id=676558230 instance=ExtResource("4_vl3i2")]
+transform = Transform3D(0.943269, 0, -0.33202943, 0, 1, 0, 0.33202943, 0, 0.943269, 0.4628315, 0.94401884, 0.18337095)
+
 [node name="Fan A" parent="." unique_id=1476468136 instance=ExtResource("4_xodqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4338453, 0)
 
@@ -68,3 +80,66 @@ transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, 10,
 
 [node name="coffee_machine" parent="." unique_id=1798506635 instance=ExtResource("6_yxfp5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9135902, -9)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2135028042]
+
+[node name="TaskPanel" type="Control" parent="CanvasLayer" unique_id=1878462713]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -340.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = 390.0
+grow_horizontal = 0
+script = ExtResource("7_ovxft")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TaskPanel" unique_id=374702652]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vl3i2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TaskPanel/Panel" unique_id=289640969]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1953345978]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "Current Task"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Name" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1796123299]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_font_sizes/font_size = 24
+text = "Delete corrupted file on your desktop"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Description" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1796509418]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.49747366, 0.49747366, 0.49747366, 1)
+theme_override_font_sizes/font_size = 24
+text = "[  ] Go to your PC
+[  ] Grab the file in the garbage application
+[  ] Get out of your PC"
+vertical_alignment = 1
+autowrap_mode = 3

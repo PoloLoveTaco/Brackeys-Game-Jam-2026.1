@@ -53,6 +53,9 @@ var freeflying : bool = false
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
 @onready var collider: CollisionShape3D = $Collider
+@onready var interact_ray: RayCast3D = $Head/Camera3D/RayCast3D
+
+var last_hovered_item: TaskItem = null
 
 func _ready() -> void:
 	check_input_mappings()
@@ -66,6 +69,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_key_pressed(KEY_ESCAPE):
 		release_mouse()
 	
+	if event.is_action_pressed("interact"):
+		check_interaction()
+	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
 		rotate_look(event.relative)
@@ -76,7 +82,36 @@ func _unhandled_input(event: InputEvent) -> void:
 			enable_freefly()
 		else:
 			disable_freefly()
+			
+func check_interaction():
+	if interact_ray.is_colliding():
+		var col = interact_ray.get_collider()
+		
+		if col.is_in_group("task_item"):
+			var task_item: TaskItem = col
+			
+			if TaskManager.current_task.get_current_step().target_id == task_item.id:
+				task_item.interact()
 
+func _process(delta: float) -> void:
+	if interact_ray.is_colliding():
+		var col = interact_ray.get_collider()
+		
+		if col is TaskItem:
+			if col.id == TaskManager.current_task.get_current_step().target_id: 
+				if last_hovered_item != col:
+					_clear_highlight()
+					col.set_highlight(true)
+					last_hovered_item = col
+			return
+	
+	_clear_highlight()
+
+func _clear_highlight():
+	if last_hovered_item:
+		last_hovered_item.set_highlight(false)
+		last_hovered_item = null
+	
 func _physics_process(delta: float) -> void:
 	# If freeflying, handle freefly and nothing else
 	if can_freefly and freeflying:

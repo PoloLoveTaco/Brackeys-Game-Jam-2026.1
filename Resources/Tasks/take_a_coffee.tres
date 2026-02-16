@@ -9,14 +9,14 @@ display_name = "Se faire un café dans la salle de pause"
 steps = Array[Dictionary]([{
 "description": "Prendre ma tasse sur mon bureau",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": "coffee_cup"
 }, {
 "description": "Déposer ma tasse dans la machine à café",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": ""
 }, {
 "description": "Récupérer mon café dans la machine à café",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": ""
 }])
 metadata/_custom_type_script = "uid://bxnax6nydvu6e"

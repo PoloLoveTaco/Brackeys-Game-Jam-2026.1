@@ -3,9 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_no04e"]
 [ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="2_vu6mp"]
 [ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="3_1dxvv"]
+[ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="4_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_xodqj"]
-[ext_resource type="PackedScene" uid="uid://btlu66uyotpkc" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="6_yxfp5"]
 [ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_ovxft"]
+[ext_resource type="PackedScene" uid="uid://bs5hnr31y3rk0" path="res://Scenes/Furniture/coffee_machine.tscn" id="8_vl3i2"]
+[ext_resource type="Script" uid="uid://n3ggb7uh1wtw" path="res://Scripts/task_panel.gd" id="9_ill0w"]
 [ext_resource type="PackedScene" uid="uid://bd8mk0j6xlaif" path="res://Scenes/Furniture/wall_office_a.tscn" id="9_q2yu6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
@@ -20,6 +22,21 @@ background_mode = 2
 sky = SubResource("Sky_1dxvv")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl3i2"]
+bg_color = Color(0, 0, 0, 0.58431375)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
 
 [node name="Office A" type="Node3D" unique_id=1992150046]
 
@@ -82,14 +99,14 @@ transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.
 [node name="Chair Office A5" parent="Salle 1" unique_id=1871802729 instance=ExtResource("3_1dxvv")]
 transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -4.221526, 0, 4.2845006)
 
+[node name="CoffeeCup" parent="Salle 1" unique_id=676558230 instance=ExtResource("4_vl3i2")]
+transform = Transform3D(0.7387024, 0, 0.6740317, 0, 1, 0, -0.6740317, 0, 0.7387024, 3.5440228, 0.95310533, 0.18808293)
+
 [node name="Chair Office A6" parent="Salle 1" unique_id=44754196 instance=ExtResource("3_1dxvv")]
 transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -4.221526, 0, 0.2845006)
 
 [node name="Fan A" parent="Salle 1" unique_id=1476468136 instance=ExtResource("4_xodqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.929111, -4)
-
-[node name="coffee_machine" parent="Salle 1" unique_id=1798506635 instance=ExtResource("6_yxfp5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9135902, -9)
 
 [node name="Walls" type="Node3D" parent="Salle 1" unique_id=1724007419]
 
@@ -246,3 +263,64 @@ transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7.5)
 
 [node name="WallOfficeA3" parent="Salle 4" unique_id=891744500 instance=ExtResource("9_q2yu6")]
 transform = Transform3D(-1.09278474e-07, 0, -1, 0, 1, 0, 2.5, 0, -4.371139e-08, 18, 0, 2.5)
+
+[node name="CoffeeMachine" parent="." unique_id=1354844394 instance=ExtResource("8_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.080314, 0.9979943, -9.4272995)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2084399082]
+
+[node name="TaskPanel" type="Control" parent="CanvasLayer" unique_id=1479171045]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -340.0
+offset_top = 40.0
+offset_right = -40.0
+offset_bottom = 440.0
+grow_horizontal = 0
+script = ExtResource("9_ill0w")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/TaskPanel" unique_id=292957092]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vl3i2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/TaskPanel/Panel" unique_id=1756582749]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1634422358]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "Tâche"
+
+[node name="Name" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=113743078]
+custom_minimum_size = Vector2(300, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 24
+text = "Tâche"
+autowrap_mode = 3
+
+[node name="Description" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=340036492]
+custom_minimum_size = Vector2(300, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.61745477, 0.61745477, 0.6174547, 1)
+theme_override_font_sizes/font_size = 24
+text = "Tâche"
+autowrap_mode = 3

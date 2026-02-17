@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_no04e"]
 [ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="2_vu6mp"]
 [ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="3_1dxvv"]
+[ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="4_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_xodqj"]
 [ext_resource type="PackedScene" uid="uid://dur77ksffk34b" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="6_yxfp5"]
 [ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_ovxft"]
@@ -20,6 +21,13 @@ background_mode = 2
 sky = SubResource("Sky_1dxvv")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl3i2"]
+bg_color = Color(0, 0, 0, 0.5137255)
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
 
 [node name="Office A" type="Node3D" unique_id=1992150046]
 

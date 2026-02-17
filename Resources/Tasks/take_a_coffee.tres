@@ -7,16 +7,16 @@ script = ExtResource("1_qs3vd")
 task_id = "take_a_coffee"
 display_name = "Se faire un café dans la salle de pause"
 steps = Array[Dictionary]([{
-"description": "Prendre ma tasse sur mon bureau",
+"description": "Prendre la tasse sur mon bureau",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": "coffee_cup"
 }, {
-"description": "Déposer ma tasse dans la machine à café",
+"description": "Déposer la tasse dans la machine à café",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": "coffee_machine"
 }, {
-"description": "Récupérer mon café dans la machine à café",
+"description": "Récupérer le café dans la machine à café",
 "is_done": false,
-"target_node": NodePath("")
+"target_id": "coffee_cup"
 }])
 metadata/_custom_type_script = "uid://bxnax6nydvu6e"

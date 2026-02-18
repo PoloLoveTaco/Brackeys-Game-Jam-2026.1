@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="TaskData" format=3 uid="uid://c5switag7d1cj"]
+
+[ext_resource type="Script" uid="uid://bxnax6nydvu6e" path="res://Resources/task_data.gd" id="1_o0jtq"]
+
+[resource]
+script = ExtResource("1_o0jtq")
+task_id = "print_file"
+display_name = "Imprimer un fichier et le déposer sur le bureau du manager"
+steps = Array[Dictionary]([{
+"description": "Imprimer le fichier depuis mon ordinateur",
+"is_done": false,
+"target_id": "my_pc"
+}, {
+"description": "Récupérer le fichier dans l'imprimante",
+"is_done": false,
+"target_id": "a voir"
+}, {
+"description": "Déposer le fichier sur le bureau du manager",
+"is_done": false
+}])
+metadata/_custom_type_script = "uid://bxnax6nydvu6e"

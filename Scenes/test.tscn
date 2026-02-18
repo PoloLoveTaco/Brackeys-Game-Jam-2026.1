@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bunobm0luvx26"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_lc1oi"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_lc1oi"]
+[ext_resource type="Script" uid="uid://n3ggb7uh1wtw" path="res://Scripts/task_panel.gd" id="2_8od7v"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_37kl0"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -123,7 +124,7 @@ material = SubResource("StandardMaterial3D_qc4db")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=261922610]
 
 [node name="TaskPanel" type="Control" parent="CanvasLayer" unique_id=507530971]
-custom_minimum_size = Vector2(300, 350)
+custom_minimum_size = Vector2(300, 400)
 layout_mode = 3
 anchors_preset = 1
 anchor_left = 1.0
@@ -133,6 +134,7 @@ offset_top = 40.0
 offset_right = -40.0
 offset_bottom = 390.0
 grow_horizontal = 0
+script = ExtResource("2_8od7v")
 
 [node name="Panel" type="Panel" parent="CanvasLayer/TaskPanel" unique_id=1794853812]
 layout_mode = 1
@@ -160,7 +162,7 @@ text = "Current Task"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=2161725]
+[node name="Name" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=2161725]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 size_flags_vertical = 1
@@ -170,7 +172,7 @@ text = "Delete corrupted file on your desktop"
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Label3" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1592386922]
+[node name="Description" type="Label" parent="CanvasLayer/TaskPanel/Panel/VBoxContainer" unique_id=1592386922]
 custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 size_flags_vertical = 3

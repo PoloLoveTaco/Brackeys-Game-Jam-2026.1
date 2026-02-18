@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_no04e"]
 [ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_ovxft"]
+[ext_resource type="PackedScene" uid="uid://bs5hnr31y3rk0" path="res://Scenes/Furniture/coffee_machine.tscn" id="8_vl3i2"]
+[ext_resource type="Script" uid="uid://n3ggb7uh1wtw" path="res://Scripts/task_panel.gd" id="9_ill0w"]
 [ext_resource type="PackedScene" uid="uid://bd8mk0j6xlaif" path="res://Scenes/Furniture/wall_office_a.tscn" id="9_q2yu6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
@@ -16,6 +18,21 @@ background_mode = 2
 sky = SubResource("Sky_no04e")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl3i2"]
+bg_color = Color(0, 0, 0, 0.58431375)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+expand_margin_left = 6.0
+expand_margin_top = 6.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
 
 [node name="Office A" type="Node3D" unique_id=1992150046]
 

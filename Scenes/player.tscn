@@ -19,7 +19,7 @@ shader = ExtResource("2_mpk8l")
 shader_parameter/brightness = 1.02
 shader_parameter/contrast = 1.0000000475
 shader_parameter/saturation = 1.0000000475
-shader_parameter/gamma = 1.0000000409802299
+shader_parameter/gamma = 1.00000004098023
 shader_parameter/curvature = 0.0
 shader_parameter/corner_soften = 0.0
 shader_parameter/vignette = 0.38
@@ -55,7 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 shape = SubResource("CapsuleShape3D_iof21")
 
 [node name="Head" type="Node3D" parent="." unique_id=1812444843]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=2134471446]
 

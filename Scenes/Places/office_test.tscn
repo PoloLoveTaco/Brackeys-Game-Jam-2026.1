@@ -1,0 +1,248 @@
+[gd_scene format=3 uid="uid://b7b0mlhmb5lil"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/player.tscn" id="1_77c35"]
+[ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="2_coo8d"]
+[ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="3_wjl54"]
+[ext_resource type="PackedScene" uid="uid://dq53hg61lwue3" path="res://Scenes/Furniture/fan_a.tscn" id="4_kot02"]
+[ext_resource type="PackedScene" uid="uid://btlu66uyotpkc" path="res://Scenes/Furniture/coffee_machine_a.tscn" id="5_jqoeu"]
+[ext_resource type="PackedScene" uid="uid://bd8mk0j6xlaif" path="res://Scenes/Furniture/wall_office_a.tscn" id="6_mrhw5"]
+[ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_j8ypr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_u656r"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_1dxvv"]
+sky_material = SubResource("ProceduralSkyMaterial_u656r")
+
+[sub_resource type="Environment" id="Environment_vc6ks"]
+background_mode = 2
+sky = SubResource("Sky_1dxvv")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="OfficeTest" type="Node3D" unique_id=1861096918]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=944987598]
+environment = SubResource("Environment_vc6ks")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1662989444]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="ProtoController" parent="." unique_id=1870830449 instance=ExtResource("1_77c35")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.33)
+can_jump = false
+
+[node name="Salle 1" type="Node3D" parent="." unique_id=2132176048]
+
+[node name="Node3D" type="CSGCombiner3D" parent="Salle 1" unique_id=1514071887]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Salle 1/Node3D" unique_id=1423987321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Salle 1/Node3D" unique_id=195901174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="Desk Office A" parent="Salle 1" unique_id=1649187544 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+
+[node name="Desk Office A2" parent="Salle 1" unique_id=1674934510 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
+
+[node name="Desk Office A3" parent="Salle 1" unique_id=561440915 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="Desk Office A5" parent="Salle 1" unique_id=1363943053 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="Desk Office A6" parent="Salle 1" unique_id=543350320 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+
+[node name="Desk Office A4" parent="Salle 1" unique_id=888638504 instance=ExtResource("2_coo8d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+
+[node name="Chair Office A" parent="Salle 1" unique_id=1654590215 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -4.221526, 0, -3.7154994)
+
+[node name="Chair Office A2" parent="Salle 1" unique_id=1402733913 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, 2.7784739, 0, -3.7154994)
+
+[node name="Chair Office A3" parent="Salle 1" unique_id=1111336705 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, 2.7784739, 0, 0.2845006)
+
+[node name="Chair Office A4" parent="Salle 1" unique_id=1892002452 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, 2.7784739, 0, 4.2845006)
+
+[node name="Chair Office A5" parent="Salle 1" unique_id=1959481619 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -4.221526, 0, 4.2845006)
+
+[node name="Chair Office A6" parent="Salle 1" unique_id=1894756148 instance=ExtResource("3_wjl54")]
+transform = Transform3D(-0.99439526, 0, 0.10572596, 0, 1, 0, -0.10572596, 0, -0.99439526, -4.221526, 0, 0.2845006)
+
+[node name="Fan A" parent="Salle 1" unique_id=1476468136 instance=ExtResource("4_kot02")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.929111, -4)
+
+[node name="coffee_machine" parent="Salle 1" unique_id=1798506635 instance=ExtResource("5_jqoeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.9135902, -9)
+
+[node name="Walls" type="Node3D" parent="Salle 1" unique_id=2010008353]
+
+[node name="WallOfficeA" parent="Salle 1/Walls" unique_id=261011829 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4.5, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 10)
+
+[node name="WallOfficeA2" parent="Salle 1/Walls" unique_id=1778377221 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4.5, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="WallOfficeA3" parent="Salle 1/Walls" unique_id=1302381258 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, -10, 0, 10)
+
+[node name="WallOfficeA4" parent="Salle 1/Walls" unique_id=1452746984 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="WallOfficeA5" parent="Salle 1/Walls" unique_id=435534332 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-8.742278e-08, 0, 0.99999994, 0, 1, 0, -1.9999999, 0, -4.3711385e-08, 10, 0, -6)
+
+[node name="WallOfficeA6" parent="Salle 1/Walls" unique_id=559763080 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-1.7484555e-07, 0, 0.99999994, 0, 1, 0, -3.9999998, 0, -4.3711385e-08, 10, 0, 4)
+
+[node name="WallOfficeA7" parent="Salle 1/Walls" unique_id=220312877 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-8.742278e-08, 0, 1, 0, 1, 0, -2, 0, -4.371139e-08, 10, 0, 10)
+
+[node name="WallDoorOfficeA" parent="Salle 1/Walls" unique_id=1297005587 instance=ExtResource("7_j8ypr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 10)
+
+[node name="WallDoorOfficeA2" parent="Salle 1/Walls" unique_id=704018150 instance=ExtResource("7_j8ypr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10, 0, 5.5)
+
+[node name="WallDoorOfficeA3" parent="Salle 1/Walls" unique_id=270574691 instance=ExtResource("7_j8ypr")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10, 0, -4.5)
+
+[node name="Salle 2" type="Node3D" parent="." unique_id=1858095103]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6, 0, 38)
+
+[node name="Node3D" type="CSGCombiner3D" parent="Salle 2" unique_id=1581139063]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Salle 2/Node3D" unique_id=1109104681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Salle 2/Node3D" unique_id=1296181677]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+use_collision = true
+size = Vector3(20, 1, 20)
+
+[node name="Walls" type="Node3D" parent="Salle 2" unique_id=162481486]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 0, 0, 0)
+
+[node name="WallOfficeA" parent="Salle 2/Walls" unique_id=1927926881 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4.5, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 10)
+
+[node name="WallOfficeA2" parent="Salle 2/Walls" unique_id=534856107 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4.5, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10)
+
+[node name="WallOfficeA3" parent="Salle 2/Walls" unique_id=191844846 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, -10, 0, 10)
+
+[node name="WallOfficeA4" parent="Salle 2/Walls" unique_id=164114364 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="WallOfficeA5" parent="Salle 2/Walls" unique_id=134488999 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-4.371139e-07, 0, 1, 0, 1, 0, -10, 0, -4.371139e-08, 10, 0, 9.999998)
+
+[node name="WallDoorOfficeA" parent="Salle 2/Walls" unique_id=1391732477 instance=ExtResource("7_j8ypr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 10)
+
+[node name="Couloir" type="Node3D" parent="." unique_id=461410168]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Couloir" unique_id=315224630]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 15)
+use_collision = true
+size = Vector3(3, 1, 10)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Couloir" unique_id=528977767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, -0.5, 23)
+use_collision = true
+size = Vector3(3, 1, 10)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Couloir" unique_id=2138181554]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, -0.5, 18.5)
+use_collision = true
+size = Vector3(3, 1, 7)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Couloir" unique_id=1905183964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 15)
+size = Vector3(3, 1, 10)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Couloir" unique_id=1696851161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 3.5, 23)
+size = Vector3(3, 1, 10)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Couloir" unique_id=809184904]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, 3.5, 18.5)
+size = Vector3(3, 1, 7)
+
+[node name="WallOfficeA" parent="Couloir" unique_id=682849342 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(2.95, 0, 0, 0, 1, 0, 0, 0, 1, -4.45, 0, 20)
+
+[node name="WallOfficeA2" parent="Couloir" unique_id=1887525633 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(2.95, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 17)
+
+[node name="WallOfficeA3" parent="Couloir" unique_id=403978668 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-2.1855695e-07, 0, -0.9999998, 0, 1, 0, 5, 0, -4.371138e-08, 1.5, 0, 10)
+
+[node name="WallOfficeA4" parent="Couloir" unique_id=1072494009 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-1.5517543e-07, 0, -1, 0, 1, 0, 3.55, 0, -4.371139e-08, -1.5, 0, 10)
+
+[node name="WallOfficeA5" parent="Couloir" unique_id=1155960023 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-2.3822706e-07, 0, -1, 0, 1, 0, 5.45, 0, -4.371139e-08, -7.5, 0, 17)
+
+[node name="WallOfficeA6" parent="Couloir" unique_id=1483501392 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-1.7484555e-07, 0, -0.9999999, 0, 1, 0, 4, 0, -4.3711385e-08, -4.5, 0, 19.9)
+
+[node name="Salle 3" type="Node3D" parent="." unique_id=617174245]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Salle 3" unique_id=238368185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, -0.5, -5)
+use_collision = true
+size = Vector3(3, 1, 3)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Salle 3" unique_id=860111582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 3, -5)
+size = Vector3(3, 1, 3)
+
+[node name="WallOfficeA" parent="Salle 3" unique_id=1063869840 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -6.5)
+
+[node name="WallOfficeA2" parent="Salle 3" unique_id=876358635 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -3.5)
+
+[node name="WallOfficeA3" parent="Salle 3" unique_id=28481289 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-6.556708e-08, 0, 1, 0, 1, 0, -1.5, 0, -4.371139e-08, 13, 0, -3.5)
+
+[node name="Salle 4" type="Node3D" parent="." unique_id=7275406]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Salle 4" unique_id=1465227928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, -0.5, 5)
+use_collision = true
+size = Vector3(8, 1, 5)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Salle 4" unique_id=1266034260]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 3, 5)
+size = Vector3(8, 1, 5)
+
+[node name="WallOfficeA" parent="Salle 4" unique_id=1907370076 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2.5)
+
+[node name="WallOfficeA2" parent="Salle 4" unique_id=1649165959 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7.5)
+
+[node name="WallOfficeA3" parent="Salle 4" unique_id=1427130359 instance=ExtResource("6_mrhw5")]
+transform = Transform3D(-1.09278474e-07, 0, -1, 0, 1, 0, 2.5, 0, -4.371139e-08, 18, 0, 2.5)

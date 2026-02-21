@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdcre3dglgq7c"
-path.s3tc="res://.godot/imported/Washing Product.png-5b532acb26e01b8af18ae2bc4ddc38e6.s3tc.ctex"
+path.s3tc="res://.godot/imported/Washing Product.png-cd9d87a3427eb8195d7f13f16e45da61.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/HomeSet/textures/Washing Product.png"
-dest_files=["res://.godot/imported/Washing Product.png-5b532acb26e01b8af18ae2bc4ddc38e6.s3tc.ctex"]
+source_file="res://Assets/HomeSet/Textures/Washing Product.png"
+dest_files=["res://.godot/imported/Washing Product.png-cd9d87a3427eb8195d7f13f16e45da61.s3tc.ctex"]
 
 [params]
 

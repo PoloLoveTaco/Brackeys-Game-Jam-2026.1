@@ -327,6 +327,93 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.38
 [node name="Nature_Deco_3" parent="RestRoom" unique_id=58787295 instance=ExtResource("8_vl3i2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7063856, 0.0022846162, -26.836136)
 
+[node name="Sofa 2" parent="RestRoom" unique_id=1996329346 instance=ExtResource("13_x4ox2")]
+transform = Transform3D(-1.1999999, 0, -1.0490733e-07, 0, 1.1999999, 0, 1.0490733e-07, 0, -1.1999999, -2.55, 0.002, -26.897)
+
+[node name="Sofa 4" parent="RestRoom" unique_id=1519894919 instance=ExtResource("13_x4ox2")]
+transform = Transform3D(1.1999999, 0, 0, 0, 1.1999999, 0, 0, 0, 1.1999999, 5.077407, 0.0019997617, -37.159763)
+
+[node name="Sofa 5" parent="RestRoom" unique_id=1018430818 instance=ExtResource("13_x4ox2")]
+transform = Transform3D(1.1999999, 0, 0, 0, 1.1999999, 0, 0, 0, 1.1999999, 1.8785491, 0.0019997617, -37.159763)
+
+[node name="Sofa 3" parent="RestRoom" unique_id=2113366370 instance=ExtResource("13_x4ox2")]
+transform = Transform3D(-5.2453665e-08, 0, 1.1999999, 0, 1.1999999, 0, -1.1999999, 0, -5.2453665e-08, -4.6, 0.002, -28.85)
+
+[node name="Round Table" parent="RestRoom" unique_id=862925671 instance=ExtResource("14_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.55, 0, -28.85)
+
+[node name="LunchChair" parent="RestRoom" unique_id=960749409 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.1372998, 2.3841858e-07, -27.515541)
+
+[node name="LunchChair2" parent="RestRoom" unique_id=1321148060 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1372998, 2.3841858e-07, -29.515541)
+
+[node name="LunchTable" parent="RestRoom" unique_id=786516667 instance=ExtResource("13_e5vmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1372998, 0.0020002385, -28.515541)
+
+[node name="LunchChair3" parent="RestRoom" unique_id=1457035916 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.1372995, 2.3841858e-07, -27.515541)
+
+[node name="LunchChair4" parent="RestRoom" unique_id=1185384247 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1372995, 2.3841858e-07, -29.515541)
+
+[node name="LunchTable2" parent="RestRoom" unique_id=1935319503 instance=ExtResource("13_e5vmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1372995, 0.0020002385, -28.515541)
+
+[node name="LunchChair5" parent="RestRoom" unique_id=916968062 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.52058697, 2.3841858e-07, -27.515541)
+
+[node name="LunchChair6" parent="RestRoom" unique_id=901924645 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52058697, 2.3841858e-07, -29.515541)
+
+[node name="LunchTable3" parent="RestRoom" unique_id=1589207303 instance=ExtResource("13_e5vmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52058697, 0.0020002385, -28.515541)
+
+[node name="LunchChair7" parent="RestRoom" unique_id=517654985 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.520587, 2.3841858e-07, -27.515541)
+
+[node name="LunchChair8" parent="RestRoom" unique_id=271854520 instance=ExtResource("12_x4ox2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.520587, 2.3841858e-07, -29.515541)
+
+[node name="LunchTable4" parent="RestRoom" unique_id=320673977 instance=ExtResource("13_e5vmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.520587, 0.0020002385, -28.515541)
+
+[node name="Coffee Table" parent="RestRoom" unique_id=50760003 instance=ExtResource("13_vmy4a")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.879, 0.002, -35.5)
+
+[node name="Coffee Table2" parent="RestRoom" unique_id=927339838 instance=ExtResource("13_vmy4a")]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 5.077, 0.002, -35.5)
+
+[node name="Fridge" parent="RestRoom" unique_id=1196625982 instance=ExtResource("11_e5vmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8876493, 0, -37.446415)
+
+[node name="Office_CounterA1" parent="RestRoom" unique_id=1151442501 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.9002433, 0.09553933, -37.638123)
+
+[node name="Office_CounterA3" parent="RestRoom" unique_id=1678383285 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.9002433, 0.09553933, -37.638123)
+
+[node name="Office_CounterA4" parent="RestRoom" unique_id=1225635719 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.9002433, 0.09553933, -37.638123)
+
+[node name="Office_CounterA2" parent="RestRoom" unique_id=1877027282 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -36.727108)
+
+[node name="Office_CounterA5" parent="RestRoom" unique_id=306647245 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -35.727108)
+
+[node name="Office_CounterA6" parent="RestRoom" unique_id=1653117462 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -34.727108)
+
+[node name="Office_CounterA7" parent="RestRoom" unique_id=1501307887 instance=ExtResource("12_vmy4a")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -33.727108)
+
+[node name="CoffeeMachine" parent="RestRoom" unique_id=1354844394 instance=ExtResource("13_7tjen")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.064149, 1.0368075, -34.32757)
+
+[node name="Microwave_Old" parent="RestRoom" unique_id=1715648344 instance=ExtResource("14_vqxc8")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.0531096, 1.0445299, -35.88817)
+
 [node name="OpenSpace" type="Node3D" parent="." unique_id=1105264112]
 
 [node name="Ground" type="CSGBox3D" parent="OpenSpace" unique_id=1922551462]
@@ -523,90 +610,3 @@ transform = Transform3D(-1.7834248e-07, 0, -1, 0, 1, 0, 4.0800004, 0, -4.371139e
 
 [node name="WallOfficeA5" parent="Toilette" unique_id=227296014 instance=ExtResource("9_q2yu6")]
 transform = Transform3D(-1.7834248e-07, 0, -1, 0, 1, 0, 4.0800004, 0, -4.371139e-08, 25.5, 0, -33)
-
-[node name="Sofa 2" parent="." unique_id=1996329346 instance=ExtResource("13_x4ox2")]
-transform = Transform3D(-1.1999999, 0, -1.0490733e-07, 0, 1.1999999, 0, 1.0490733e-07, 0, -1.1999999, -2.55, 0.002, -26.897)
-
-[node name="Sofa 4" parent="." unique_id=1519894919 instance=ExtResource("13_x4ox2")]
-transform = Transform3D(1.1999999, 0, 0, 0, 1.1999999, 0, 0, 0, 1.1999999, 5.077407, 0.0019997617, -37.159763)
-
-[node name="Sofa 5" parent="." unique_id=1018430818 instance=ExtResource("13_x4ox2")]
-transform = Transform3D(1.1999999, 0, 0, 0, 1.1999999, 0, 0, 0, 1.1999999, 1.8785491, 0.0019997617, -37.159763)
-
-[node name="Sofa 3" parent="." unique_id=2113366370 instance=ExtResource("13_x4ox2")]
-transform = Transform3D(-5.2453665e-08, 0, 1.1999999, 0, 1.1999999, 0, -1.1999999, 0, -5.2453665e-08, -4.6, 0.002, -28.85)
-
-[node name="Round Table" parent="." unique_id=862925671 instance=ExtResource("14_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.55, 0, -28.85)
-
-[node name="LunchChair" parent="." unique_id=960749409 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 3.1372998, 2.3841858e-07, -27.515541)
-
-[node name="LunchChair2" parent="." unique_id=1321148060 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1372998, 2.3841858e-07, -29.515541)
-
-[node name="LunchTable" parent="." unique_id=786516667 instance=ExtResource("13_e5vmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1372998, 0.0020002385, -28.515541)
-
-[node name="LunchChair3" parent="." unique_id=1457035916 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.1372995, 2.3841858e-07, -27.515541)
-
-[node name="LunchChair4" parent="." unique_id=1185384247 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1372995, 2.3841858e-07, -29.515541)
-
-[node name="LunchTable2" parent="." unique_id=1935319503 instance=ExtResource("13_e5vmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1372995, 0.0020002385, -28.515541)
-
-[node name="LunchChair5" parent="." unique_id=916968062 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.52058697, 2.3841858e-07, -27.515541)
-
-[node name="LunchChair6" parent="." unique_id=901924645 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52058697, 2.3841858e-07, -29.515541)
-
-[node name="LunchTable3" parent="." unique_id=1589207303 instance=ExtResource("13_e5vmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52058697, 0.0020002385, -28.515541)
-
-[node name="LunchChair7" parent="." unique_id=517654985 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.520587, 2.3841858e-07, -27.515541)
-
-[node name="LunchChair8" parent="." unique_id=271854520 instance=ExtResource("12_x4ox2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.520587, 2.3841858e-07, -29.515541)
-
-[node name="LunchTable4" parent="." unique_id=320673977 instance=ExtResource("13_e5vmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.520587, 0.0020002385, -28.515541)
-
-[node name="Coffee Table" parent="." unique_id=50760003 instance=ExtResource("13_vmy4a")]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 1.879, 0.002, -35.5)
-
-[node name="Coffee Table2" parent="." unique_id=927339838 instance=ExtResource("13_vmy4a")]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 5.077, 0.002, -35.5)
-
-[node name="Fridge" parent="." unique_id=1196625982 instance=ExtResource("11_e5vmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8876493, 0, -37.446415)
-
-[node name="Office_CounterA1" parent="." unique_id=1151442501 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -4.9002433, 0.09553933, -37.638123)
-
-[node name="Office_CounterA3" parent="." unique_id=1678383285 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.9002433, 0.09553933, -37.638123)
-
-[node name="Office_CounterA4" parent="." unique_id=1225635719 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.9002433, 0.09553933, -37.638123)
-
-[node name="Office_CounterA2" parent="." unique_id=1877027282 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -36.727108)
-
-[node name="Office_CounterA5" parent="." unique_id=306647245 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -35.727108)
-
-[node name="Office_CounterA6" parent="." unique_id=1653117462 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -34.727108)
-
-[node name="Office_CounterA7" parent="." unique_id=1501307887 instance=ExtResource("12_vmy4a")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -5.130226, 0.09553933, -33.727108)
-
-[node name="CoffeeMachine" parent="." unique_id=1354844394 instance=ExtResource("13_7tjen")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.064149, 1.0368075, -34.32757)
-
-[node name="Microwave_Old" parent="." unique_id=1715648344 instance=ExtResource("14_vqxc8")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.0531096, 1.0445299, -35.88817)

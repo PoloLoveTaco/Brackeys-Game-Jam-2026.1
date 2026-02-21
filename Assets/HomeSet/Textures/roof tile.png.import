@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw6xj2hi6427p"
-path.s3tc="res://.godot/imported/roof tile.png-e47c1f2f169c342780fe3280a73de3d1.s3tc.ctex"
+path.s3tc="res://.godot/imported/roof tile.png-5a584db361da141f81745825b6505250.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/HomeSet/textures/roof tile.png"
-dest_files=["res://.godot/imported/roof tile.png-e47c1f2f169c342780fe3280a73de3d1.s3tc.ctex"]
+source_file="res://Assets/HomeSet/Textures/roof tile.png"
+dest_files=["res://.godot/imported/roof tile.png-5a584db361da141f81745825b6505250.s3tc.ctex"]
 
 [params]
 

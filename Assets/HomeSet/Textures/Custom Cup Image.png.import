@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3o8t0jjx55fg"
-path.s3tc="res://.godot/imported/Custom Cup Image.png-29d51113322fd91e08d784cd4db758f8.s3tc.ctex"
+path.s3tc="res://.godot/imported/Custom Cup Image.png-4c28a4c4c3458628b3ddcb1bc6e7362f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/HomeSet/textures/Custom Cup Image.png"
-dest_files=["res://.godot/imported/Custom Cup Image.png-29d51113322fd91e08d784cd4db758f8.s3tc.ctex"]
+source_file="res://Assets/HomeSet/Textures/Custom Cup Image.png"
+dest_files=["res://.godot/imported/Custom Cup Image.png-4c28a4c4c3458628b3ddcb1bc6e7362f.s3tc.ctex"]
 
 [params]
 

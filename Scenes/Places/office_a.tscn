@@ -27,6 +27,8 @@
 [ext_resource type="PackedScene" uid="uid://dpi8bw3btjwdw" path="res://Scenes/Furniture/chair_office_a.tscn" id="16_7tjen"]
 [ext_resource type="PackedScene" uid="uid://b302ndx7w6x0e" path="res://Assets/FBX/Separated/Office_Files_E.fbx" id="16_w56l1"]
 [ext_resource type="PackedScene" uid="uid://bnu0hu678nfk" path="res://Assets/FBX/Separated/Phone_B.fbx" id="27_w22hl"]
+[ext_resource type="PackedScene" uid="uid://cf4b8n2ewbg6o" path="res://Scenes/Furniture/wall_office_a_transparant.tscn" id="27_xk4jk"]
+[ext_resource type="PackedScene" uid="uid://crjrnyfqjud0x" path="res://Scenes/Furniture/wall_door_office_a_transparant.tscn" id="28_16ldu"]
 [ext_resource type="PackedScene" uid="uid://bufw2gwabpmcg" path="res://Assets/FBX/Separated/Phone_A_Base.fbx" id="28_j6xf7"]
 [ext_resource type="PackedScene" uid="uid://jddnuod4srj2" path="res://Assets/FBX/Separated/Printer.fbx" id="29_72k1i"]
 
@@ -633,6 +635,36 @@ transform = Transform3D(-2.8576346e-07, 0, -0.99999994, 0, 1, 0, 6.537505, 0, -4
 
 [node name="WallOfficeA6" parent="OpenSpace" unique_id=4406339 instance=ExtResource("9_q2yu6")]
 transform = Transform3D(-4.4437922e-08, 0, -0.99999994, 0, 1, 0, 1.016621, 0, -4.3711385e-08, 25.5, 0, 2.9750214)
+
+[node name="WallOfficeA9" parent="OpenSpace" unique_id=1686219456 instance=ExtResource("27_xk4jk")]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 25.5, 0, -15)
+
+[node name="WallOfficeA10" parent="OpenSpace" unique_id=684742140 instance=ExtResource("27_xk4jk")]
+transform = Transform3D(2.5, 0, 0, 0, 1, 0, 0, 0, 1, 30.5, 0, -15)
+
+[node name="WallOfficeA11" parent="OpenSpace" unique_id=755726081 instance=ExtResource("27_xk4jk")]
+transform = Transform3D(-2.1631972e-07, 0, -1, 0, 1, 0, 4.948818, 0, -4.371139e-08, 33, 0, -24.895805)
+
+[node name="WallOfficeA8" parent="OpenSpace" unique_id=883036064 instance=ExtResource("27_xk4jk")]
+transform = Transform3D(1.5, 0, 0, 0, 1, 0, 0, 0, 1, 37.5, 0, -15)
+
+[node name="WallDoorOfficeA" parent="OpenSpace" unique_id=589076795 instance=ExtResource("28_16ldu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, -15)
+
+[node name="WallDoorOfficeA2" parent="OpenSpace" unique_id=880256699 instance=ExtResource("28_16ldu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -15)
+
+[node name="Light" parent="OpenSpace" unique_id=1946763050 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5, 3, -18)
+
+[node name="Light2" parent="OpenSpace" unique_id=14170263 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.5, 3, -22)
+
+[node name="Light3" parent="OpenSpace" unique_id=509630736 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5, 3, -18)
+
+[node name="Light4" parent="OpenSpace" unique_id=1532888578 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5, 3, -22)
 
 [node name="DirectorOffice" type="Node3D" parent="." unique_id=2038156217]
 

@@ -41,6 +41,60 @@ shader_parameter/roll_strength = 0.0
 shader_parameter/glow_strength = 0.25
 shader_parameter/glow_threshold = 0.65
 
+[sub_resource type="Animation" id="Animation_vgqql"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.16934486, -0.40268612, -0.23730953)]
+}
+
+[sub_resource type="Animation" id="Animation_x3wgy"]
+resource_name = "close_task"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.16934486, -0.07729101, -0.23730953), Vector3(0.16934486, -0.40268612, -0.23730953)]
+}
+
+[sub_resource type="Animation" id="Animation_fkybt"]
+resource_name = "open_task"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.16934486, -0.40268612, -0.23730953), Vector3(0.16934486, -0.07729101, -0.23730953)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x3wgy"]
+_data = {
+&"RESET": SubResource("Animation_vgqql"),
+&"close_task": SubResource("Animation_x3wgy"),
+&"open_task": SubResource("Animation_fkybt")
+}
+
 [sub_resource type="CanvasTexture" id="CanvasTexture_cvnsp"]
 
 [node name="Player" type="CharacterBody3D" unique_id=1870830449]
@@ -74,13 +128,14 @@ mouse_filter = 2
 target_position = Vector3(0, 0, -1)
 
 [node name="Notepad" parent="Head/Camera3D" unique_id=990886253 instance=ExtResource("3_6t5aa")]
-transform = Transform3D(0.819374, -0.47018215, -0.32795578, 0.031103993, 0.6077104, -0.7935495, 0.5724147, 0.640013, 0.51256675, 0.16934486, -0.07729101, -0.23730953)
+transform = Transform3D(0.819374, -0.47018215, -0.32795578, 0.031103993, 0.6077104, -0.7935495, 0.5724147, 0.640013, 0.51256675, 0.16934486, -0.40268612, -0.23730953)
 script = ExtResource("4_vgqql")
 
 [node name="Label3D" type="Label3D" parent="Head/Camera3D/Notepad" unique_id=1598554594]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, -0.08277494)
 pixel_size = 0.0004
 no_depth_test = true
+modulate = Color(0, 0, 0, 1)
 text = "Tasks"
 outline_size = 0
 
@@ -88,6 +143,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 0.30901697, 0.95105654, 0, -0.95105654, 0.30901697, 0, 0, -0.047901213)
 pixel_size = 0.0003
 no_depth_test = true
+modulate = Color(0, 0, 0, 1)
 text = "Tasks"
 outline_size = 0
 autowrap_mode = 3
@@ -97,10 +153,14 @@ width = 540.0
 transform = Transform3D(0.9980267, -0.06279052, 0, -2.7446607e-09, -4.3625136e-08, 1, -0.06279052, -0.9980267, -4.371139e-08, 0, 0, 0.032574475)
 pixel_size = 0.0003
 no_depth_test = true
+modulate = Color(0, 0, 0, 1)
 text = "Tasks"
 outline_size = 0
 autowrap_mode = 3
 width = 540.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Head/Camera3D/Notepad" unique_id=978978736]
+libraries/ = SubResource("AnimationLibrary_x3wgy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1358758562]
 

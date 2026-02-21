@@ -57,6 +57,9 @@ var freeflying : bool = false
 
 var last_hovered_item: TaskItem = null
 
+@onready var anim_task_book: AnimationPlayer = $Head/Camera3D/Notepad/AnimationPlayer
+var task_book_is_open: bool = false
+
 func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
@@ -71,6 +74,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	
 	if event.is_action_pressed("interact"):
 		check_interaction()
+		
+	if event.is_action_pressed("task_book"):
+		open_close_task_book()
 	
 	# Look around
 	if mouse_captured and event is InputEventMouseMotion:
@@ -82,8 +88,18 @@ func _unhandled_input(event: InputEvent) -> void:
 			enable_freefly()
 		else:
 			disable_freefly()
-			
+
+func open_close_task_book():
+	if task_book_is_open:
+		anim_task_book.play("close_task")
+	else:
+		anim_task_book.play("open_task")
+	
+	task_book_is_open = !task_book_is_open
+
 func check_interaction():
+	if anim_task_book.is_playing():
+		return
 	if interact_ray.is_colliding():
 		var col = interact_ray.get_collider()
 		

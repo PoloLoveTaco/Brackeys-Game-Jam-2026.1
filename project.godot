@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 TaskManager="*uid://ewkog6kyn8xl"
+AnomalyManager="*uid://bv0vivp1j0gcc"
 
 [display]
 
@@ -30,6 +31,7 @@ window/size/mode=2
 task_item=""
 player=""
 my_pc=""
+return_pc=""
 
 [input]
 

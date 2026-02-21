@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c8he5f5vo3gq8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqxc8"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 2.5
+
+[node name="Light" type="CSGBox3D" unique_id=389367957]
+size = Vector3(1, 0.075, 0.285)
+material = SubResource("StandardMaterial3D_vqxc8")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1329214283]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+spot_range = 7.0
+spot_angle = 90.0

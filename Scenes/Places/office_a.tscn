@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="4_vmy4a"]
 [ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="6_vqxc8"]
 [ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_ovxft"]
+[ext_resource type="PackedScene" uid="uid://c8he5f5vo3gq8" path="res://Scenes/Furniture/light.tscn" id="7_uydrv"]
 [ext_resource type="PackedScene" uid="uid://crcid64n14ijt" path="res://Assets/FBX/Separated/Painting.fbx" id="7_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://4cy4nx7ytlon" path="res://Assets/FBX/Separated/Nature_Deco_3.fbx" id="8_vl3i2"]
 [ext_resource type="PackedScene" uid="uid://bd8mk0j6xlaif" path="res://Scenes/Furniture/wall_office_a.tscn" id="9_q2yu6"]
@@ -313,6 +314,18 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6, 0
 [node name="CoffeeCup" parent="YourOffice" unique_id=676558230 instance=ExtResource("6_vqxc8")]
 transform = Transform3D(0.89388835, 0, -0.4482896, 0, 1, 0, 0.4482896, 0, 0.89388835, 5.251782, 0.95128876, 2.419887)
 
+[node name="Light" parent="YourOffice" unique_id=389367957 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, -0.166)
+
+[node name="Light2" parent="YourOffice" unique_id=1378587713 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, -0.166)
+
+[node name="Light3" parent="YourOffice" unique_id=484092453 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 2.351)
+
+[node name="Light4" parent="YourOffice" unique_id=920359883 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, 2.351)
+
 [node name="StorageRoom" type="Node3D" parent="." unique_id=924785003]
 
 [node name="Ground" type="CSGBox3D" parent="StorageRoom" unique_id=1544691526]
@@ -468,6 +481,33 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.0
 
 [node name="Microwave_Old" parent="RestRoom" unique_id=1715648344 instance=ExtResource("14_vqxc8")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.0531096, 1.0445299, -35.88817)
+
+[node name="Light" parent="RestRoom" unique_id=2108087978 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6986227, 3, -36)
+
+[node name="Light2" parent="RestRoom" unique_id=1191492791 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6986227, 3, -36)
+
+[node name="Light3" parent="RestRoom" unique_id=1288615877 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3013773, 3, -36)
+
+[node name="Light4" parent="RestRoom" unique_id=1647641431 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6986227, 3, -32)
+
+[node name="Light5" parent="RestRoom" unique_id=2031920938 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6986227, 3, -32)
+
+[node name="Light6" parent="RestRoom" unique_id=1138723841 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3013773, 3, -32)
+
+[node name="Light7" parent="RestRoom" unique_id=232185482 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6986227, 3, -28)
+
+[node name="Light8" parent="RestRoom" unique_id=847901863 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6986227, 3, -28)
+
+[node name="Light9" parent="RestRoom" unique_id=359723484 instance=ExtResource("7_uydrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3013773, 3, -28)
 
 [node name="OpenSpace" type="Node3D" parent="." unique_id=1105264112]
 

@@ -97,7 +97,7 @@ _data = {
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cvnsp"]
 
-[node name="Player" type="CharacterBody3D" unique_id=1870830449]
+[node name="Player" type="CharacterBody3D" unique_id=1870830449 groups=["player"]]
 script = ExtResource("1_ucva2")
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=38199102]
@@ -166,7 +166,7 @@ libraries/ = SubResource("AnimationLibrary_x3wgy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1358758562]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=153811139]
+[node name="Crosshair" type="TextureRect" parent="CanvasLayer" unique_id=153811139]
 custom_minimum_size = Vector2(5, 5)
 anchors_preset = 8
 anchor_left = 0.5

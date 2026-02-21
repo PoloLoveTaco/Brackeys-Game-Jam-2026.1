@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cc3ydpwahs33p"]
+
+[ext_resource type="PackedScene" uid="uid://bgg16b1bnqbd8" path="res://Assets/FBX/Separated/Computer_Old_Monitor.fbx" id="1_mbhc0"]
+
+[node name="Computer_Old_Monitor" unique_id=1132994445 instance=ExtResource("1_mbhc0")]

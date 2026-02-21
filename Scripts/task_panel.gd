@@ -1,7 +1,7 @@
-extends Control
+extends Node3D
 
-@onready var name_label: Label = $Panel/VBoxContainer/Name
-@onready var description_label: Label = $Panel/VBoxContainer/Description
+@onready var name_label: Label3D = $Name
+@onready var description_label: Label3D = $Description
 
 func _ready() -> void:
 	TaskManager.task_ui_update.connect(update_task)

@@ -5,17 +5,17 @@
 [resource]
 script = ExtResource("1_qs3vd")
 task_id = "take_a_coffee"
-display_name = "Se faire un café dans la salle de pause"
+display_name = "Make a coffee in the rest room"
 steps = Array[Dictionary]([{
-"description": "Prendre la tasse sur mon bureau",
+"description": "Take my coffee cup",
 "is_done": false,
 "target_id": "coffee_cup"
 }, {
-"description": "Déposer la tasse dans la machine à café",
+"description": "Use the coffee machine",
 "is_done": false,
 "target_id": "coffee_machine"
 }, {
-"description": "Récupérer le café dans la machine à café",
+"description": "Get my filled coffe cup",
 "is_done": false,
 "target_id": "coffee_cup"
 }])

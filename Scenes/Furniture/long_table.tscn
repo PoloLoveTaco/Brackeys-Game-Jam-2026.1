@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://m1yrd2j71buq"]
+
+[ext_resource type="PackedScene" uid="uid://dyjmcniavabeg" path="res://Assets/FBX/Separated/Office_Desk_2.fbx" id="1_huhcj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_huhcj"]
+
+[node name="Long Table" type="StaticBody3D" unique_id=1824176643]
+
+[node name="Office_Desk_2" parent="." unique_id=1523281195 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 35.971676, 0, -18.627537)
+
+[node name="Office_Desk_3" parent="." unique_id=1010508486 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 35.972, 0, -20)
+
+[node name="Office_Desk_4" parent="." unique_id=687067491 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 35.972, 0, -21.4)
+
+[node name="Office_Desk_5" parent="." unique_id=272923712 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 37.971676, 0, -18.627537)
+
+[node name="Office_Desk_6" parent="." unique_id=1832329223 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 37.972, 0, -20)
+
+[node name="Office_Desk_7" parent="." unique_id=1604603777 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 37.972, 0, -21.4)
+
+[node name="Office_Desk_8" parent="." unique_id=1162706600 instance=ExtResource("1_huhcj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.97313, 0, -21.767487)
+
+[node name="Office_Desk_9" parent="." unique_id=2040998672 instance=ExtResource("1_huhcj")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36.973, 0, -18.267)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1403977099]
+transform = Transform3D(2.774265, 0, 0, 0, 1, 0, 0, 0, 4.2700996, 36.971878, 0.5, -20.024265)
+shape = SubResource("BoxShape3D_huhcj")

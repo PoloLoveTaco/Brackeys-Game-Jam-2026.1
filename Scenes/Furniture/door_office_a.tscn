@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dg6jhoqikeeoc"]
+
+[ext_resource type="PackedScene" uid="uid://brmsiwsyibg8d" path="res://Assets/FBX/Separated/Door_A.fbx" id="1_ywfnn"]
+[ext_resource type="PackedScene" uid="uid://eury1xyh54ah" path="res://Assets/FBX/Separated/Door_Handle1.fbx" id="2_0gjqn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ywfnn"]
+size = Vector3(1, 2.06, 0.085)
+
+[node name="Door Office A" type="StaticBody3D" unique_id=482787859]
+
+[node name="Door_A" parent="." unique_id=830728547 instance=ExtResource("1_ywfnn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.537111, 0, -36)
+
+[node name="Door_Handle1" parent="Door_A" unique_id=1212298716 instance=ExtResource("2_0gjqn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7948494, 0.92247045, 0.089458466)
+
+[node name="Door_Handle2" parent="Door_A" unique_id=640705784 instance=ExtResource("2_0gjqn")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0.7948494, 0.92247045, -0.094200134)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1942291965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 1, -36)
+shape = SubResource("BoxShape3D_ywfnn")

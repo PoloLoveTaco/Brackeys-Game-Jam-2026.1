@@ -8,8 +8,8 @@ signal anomaly_triggered
 signal task_ui_update
 
 var tasks = [
+	preload("res://Resources/Tasks/print_file.tres"),
 	preload("res://Resources/Tasks/take_a_coffee.tres"),
-	preload("res://Resources/Tasks/print_file.tres")
 ]
 var task_index = 0
 

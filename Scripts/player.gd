@@ -60,6 +60,15 @@ var last_hovered_item: TaskItem = null
 @onready var anim_task_book: AnimationPlayer = $Head/Camera3D/Notepad/AnimationPlayer
 var task_book_is_open: bool = false
 
+var is_frozen: bool = false
+
+func set_frozen(value: bool):
+	is_frozen = value
+	if is_frozen:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	else:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
 func _ready() -> void:
 	check_input_mappings()
 	look_rotation.y = rotation.y
@@ -67,6 +76,7 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Mouse capturing
+	if is_frozen: return
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		capture_mouse()
 	if Input.is_key_pressed(KEY_ESCAPE):
@@ -110,6 +120,7 @@ func check_interaction():
 				task_item.interact()
 
 func _process(delta: float) -> void:
+	if is_frozen: return
 	if interact_ray.is_colliding():
 		var col = interact_ray.get_collider()
 		
@@ -132,6 +143,7 @@ func _clear_highlight():
 	
 func _physics_process(delta: float) -> void:
 	# If freeflying, handle freefly and nothing else
+	if is_frozen: return
 	if can_freefly and freeflying:
 		var input_dir := Input.get_vector(input_left, input_right, input_forward, input_back)
 		var motion := (head.global_basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

@@ -4,7 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://dciyjklep4vcd" path="res://Assets/FBX/Separated/Chair_Office_Bottom.fbx" id="2_tmxig"]
 [ext_resource type="PackedScene" uid="uid://dc755hcqmrjqs" path="res://Assets/FBX/Separated/Chair_Office_Wheel_Copy.fbx" id="3_ksxql"]
 
-[node name="Chair Office A" type="Node3D" unique_id=1654590215]
+[sub_resource type="BoxShape3D" id="BoxShape3D_4b7rf"]
+size = Vector3(0.586792, 0.9849243, 0.6437988)
+
+[node name="Chair Office A" type="StaticBody3D" unique_id=185875667]
 
 [node name="Chair_Office_Base_A" parent="." unique_id=778292455 instance=ExtResource("1_4b7rf")]
 
@@ -24,3 +27,7 @@ transform = Transform3D(0.988199, 0, -0.15317555, 0, 1, 0, 0.15317555, 0, 0.9881
 
 [node name="Chair_Office_Wheel_Copy5" parent="." unique_id=1586522510 instance=ExtResource("3_ksxql")]
 transform = Transform3D(0.6088861, 0, 0.7932577, 0, 1, 0, -0.7932577, 0, 0.6088861, 0.20588374, 0.036919646, -0.28955358)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1215445563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034240723, 0.5887146, 0.012573242)
+shape = SubResource("BoxShape3D_4b7rf")

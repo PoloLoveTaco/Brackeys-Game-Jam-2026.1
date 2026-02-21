@@ -11,7 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://bufw2gwabpmcg" path="res://Assets/FBX/Separated/Phone_A_Base.fbx" id="10_hco80"]
 [ext_resource type="PackedScene" uid="uid://bnu0hu678nfk" path="res://Assets/FBX/Separated/Phone_B.fbx" id="11_ra33i"]
 
-[node name="Desk Office A" type="Node3D" unique_id=1649187544]
+[sub_resource type="BoxShape3D" id="BoxShape3D_jie7t"]
+size = Vector3(1.5013733, 0.7670288, 0.80615234)
+
+[node name="Desk Office A" type="StaticBody3D" unique_id=401715233]
 
 [node name="Office_Desk_1" parent="." unique_id=215258724 instance=ExtResource("1_dg11r")]
 
@@ -44,3 +47,7 @@ transform = Transform3D(0.9537956, 0, -0.3004561, 0, 1, 0, 0.3004561, 0, 0.95379
 
 [node name="Phone_B" parent="." unique_id=1599180726 instance=ExtResource("11_ra33i")]
 transform = Transform3D(-0.9565375, 0.29151928, -0.007248087, 0.052059274, 0.14625596, -0.987876, -0.28692484, -0.9453178, -0.15507555, 0.52563626, 1.0131106, -0.17386684)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=523230993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008529663, 0.5704651, -0.032958984)
+shape = SubResource("BoxShape3D_jie7t")

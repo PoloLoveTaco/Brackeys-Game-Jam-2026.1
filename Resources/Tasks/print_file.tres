@@ -5,17 +5,17 @@
 [resource]
 script = ExtResource("1_o0jtq")
 task_id = "print_file"
-display_name = "Imprimer un fichier et le déposer sur le bureau du manager"
+display_name = "Print a file and place it on the manager's desktop"
 steps = Array[Dictionary]([{
-"description": "Imprimer le fichier depuis mon ordinateur",
+"description": "Print the file from my computer",
 "is_done": false,
 "target_id": "my_pc"
 }, {
-"description": "Récupérer le fichier dans l'imprimante",
+"description": "Retrieve the file from the printer",
 "is_done": false,
 "target_id": "a voir"
 }, {
-"description": "Déposer le fichier sur le bureau du manager",
+"description": "Place the file on the manager's desktop",
 "is_done": false
 }])
 metadata/_custom_type_script = "uid://bxnax6nydvu6e"

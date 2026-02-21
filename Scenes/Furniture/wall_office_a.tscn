@@ -5,6 +5,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcunm"]
 resource_name = "Palette"
 vertex_color_use_as_albedo = true
+albedo_color = Color(0.8776157, 0.8776158, 0.8776157, 1)
 albedo_texture = ExtResource("1_4dks8")
 emission_enabled = true
 

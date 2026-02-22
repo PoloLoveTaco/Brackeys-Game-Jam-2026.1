@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d35qi6vpihegx"]
+[gd_scene format=3 uid="uid://c8he5f5vo3gq8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqxc8"]
 emission_enabled = true
@@ -11,5 +11,11 @@ material = SubResource("StandardMaterial3D_vqxc8")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1329214283]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+visible = false
 spot_range = 7.0
-spot_angle = 90.0
+spot_angle = 111.67
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=812785542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.64687026, 0)
+light_energy = 0.7
+shadow_enabled = true

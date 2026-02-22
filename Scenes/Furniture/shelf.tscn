@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b1urv0f4wqejw"]
+
+[ext_resource type="PackedScene" uid="uid://7ylbmwp32uie" path="res://Assets/FBX/Separated/Bookshelf.fbx" id="1_n3jbj"]
+[ext_resource type="PackedScene" uid="uid://dr08gklbna5tj" path="res://Assets/FBX/Separated/CoffeeCup.fbx" id="2_167qy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n3jbj"]
+size = Vector3(0.725, 2, 1.155)
+
+[node name="Shelf" type="StaticBody3D" unique_id=285711024]
+
+[node name="Bookshelf" parent="." unique_id=1872661840 instance=ExtResource("1_n3jbj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="CoffeeCup" parent="." unique_id=1532677320 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.87115383, 0, 0.4910102, 0, 1, 0, -0.4910102, 0, 0.87115383, 0.1156397, 1.5334361, 0.30742836)
+
+[node name="CoffeeCup2" parent="." unique_id=1738870130 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.87199235, 0, -0.48951948, 0, 1, 0, 0.48951948, 0, 0.87199235, -0.024032118, 1.5334361, -0.05379677)
+
+[node name="CoffeeCup3" parent="." unique_id=990982279 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.968869, 0, -0.24757405, 0, 1, 0, 0.24757405, 0, 0.968869, 0.05682086, 1.5334361, -0.29101753)
+
+[node name="CoffeeCup4" parent="." unique_id=926206826 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.968869, 0, -0.24757405, 0, 1, 0, 0.24757405, 0, 0.968869, -0.09399604, 1.0562271, 0.21821976)
+
+[node name="CoffeeCup5" parent="." unique_id=1987277168 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.97365856, 0, 0.22801092, 0, 1, 0, -0.22801092, 0, 0.97365856, -0.09399605, 1.0562271, -0.01639175)
+
+[node name="CoffeeCup6" parent="." unique_id=629269416 instance=ExtResource("2_167qy")]
+transform = Transform3D(0.97365856, 0, 0.22801092, 0, 1, 0, -0.22801092, 0, 0.97365856, 0.10510157, 1.0562271, -0.25664902)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=180814506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0601921, 0)
+shape = SubResource("BoxShape3D_n3jbj")

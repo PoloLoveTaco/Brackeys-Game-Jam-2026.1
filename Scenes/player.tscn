@@ -97,6 +97,43 @@ _data = {
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_cvnsp"]
 
+[sub_resource type="Animation" id="Animation_3smsa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackScreen:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8erm5"]
+resource_name = "fade_in"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BlackScreen:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f1ek2"]
+_data = {
+&"RESET": SubResource("Animation_3smsa"),
+&"fade_in": SubResource("Animation_8erm5")
+}
+
 [node name="Player" type="CharacterBody3D" unique_id=1870830449 groups=["player"]]
 script = ExtResource("1_ucva2")
 
@@ -165,6 +202,7 @@ width = 540.0
 libraries/ = SubResource("AnimationLibrary_x3wgy")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1358758562]
+layer = 2
 
 [node name="Crosshair" type="TextureRect" parent="CanvasLayer" unique_id=153811139]
 custom_minimum_size = Vector2(5, 5)
@@ -180,3 +218,18 @@ offset_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("CanvasTexture_cvnsp")
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=36216505]
+
+[node name="BlackScreen" type="ColorRect" parent="FadeLayer" unique_id=1770562169]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeLayer" unique_id=1427162949]
+libraries/ = SubResource("AnimationLibrary_f1ek2")
+autoplay = &"fade_in"

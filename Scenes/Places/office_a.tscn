@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dtvs6tgxit5fv" path="res://Scenes/Furniture/desk_office_a.tscn" id="4_vmy4a"]
 [ext_resource type="PackedScene" uid="uid://c0jkq0838xmui" path="res://Scenes/Furniture/coffee_cup.tscn" id="6_vqxc8"]
 [ext_resource type="PackedScene" uid="uid://cg8xq4h7t1uk6" path="res://Scenes/Furniture/wall_door_office_a.tscn" id="7_ovxft"]
-[ext_resource type="PackedScene" uid="uid://d35qi6vpihegx" path="res://Scenes/Furniture/light.tscn" id="7_uydrv"]
+[ext_resource type="PackedScene" uid="uid://c8he5f5vo3gq8" path="res://Scenes/Furniture/light.tscn" id="7_uydrv"]
 [ext_resource type="PackedScene" uid="uid://crcid64n14ijt" path="res://Assets/FBX/Separated/Painting.fbx" id="7_vl3i2"]
 [ext_resource type="Script" uid="uid://beevhhv3crsmi" path="res://Scripts/move_chair.gd" id="8_78wuv"]
 [ext_resource type="PackedScene" uid="uid://dxb4267b14rvq" path="res://Assets/HomeSet/FBX/Separated/Bed Base 2 2.fbx" id="8_gt8y6"]
@@ -1526,7 +1526,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6, 3
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14, 3, -53.5)
 
 [node name="Chair Office A3" parent="Global" unique_id=598917035 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.3836506, 0, 0.92347795, 0, 2.252881, 0, -0.92347795, 0, -0.3836506, 6.300066, 0, -40.059544)
+transform = Transform3D(-0.38365057, 0, 0.9234779, 0, 2.252881, 0, -0.9234779, 0, -0.38365057, 6.300066, 0, -40.059544)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Global" unique_id=596681797]
 root_node = NodePath("../../DirectorOffice")

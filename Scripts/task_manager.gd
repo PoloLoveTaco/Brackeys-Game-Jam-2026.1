@@ -7,9 +7,12 @@ signal new_task_assigned(task: TaskData)
 signal anomaly_triggered
 signal task_ui_update
 
+signal all_tasks_completed
+
 var tasks = [
 	preload("res://Resources/Tasks/print_file.tres"),
 	preload("res://Resources/Tasks/take_a_coffee.tres"),
+	preload("res://Resources/Tasks/clean_whiteboard.tres"),
 ]
 var task_index = 0
 
@@ -30,6 +33,7 @@ func on_step_finished(step_index: int):
 func on_task_finished():
 	task_index += 1
 	if task_index >= tasks.size():
+		all_tasks_completed.emit()
 		return
 	completed_tasks_count += 1
 	current_task = tasks[task_index]

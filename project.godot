@@ -36,6 +36,7 @@ hide_carpet=""
 move_chair=""
 microwave_anomaly=""
 hide_painting_anomaly=""
+hide_desk=""
 
 [input]
 

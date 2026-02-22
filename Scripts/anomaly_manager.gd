@@ -5,7 +5,8 @@ var ano_ids = [
 	"hide_carpet",
 	"move_chair",
 	"microwave_anomaly",
-	"hide_painting_anomaly"
+	"hide_painting_anomaly",
+	"hide_desk"
 ]
 
 var index = 0

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TaskData" format=3 uid="uid://bld6v41fek5xc"]
+
+[ext_resource type="Script" uid="uid://bxnax6nydvu6e" path="res://Resources/task_data.gd" id="1_7lhfs"]
+
+[resource]
+script = ExtResource("1_7lhfs")
+task_id = "clean_whiteboard"
+display_name = "Clean the whiteboard in the open space"
+steps = Array[Dictionary]([{
+"description": "Clean the whiteboard",
+"is_done": false,
+"target_id": "board"
+}])
+metadata/_custom_type_script = "uid://bxnax6nydvu6e"

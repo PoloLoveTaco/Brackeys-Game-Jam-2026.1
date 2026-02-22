@@ -40,8 +40,10 @@
 [ext_resource type="PackedScene" uid="uid://bikrxmvpbqf3p" path="res://Assets/FBX/Separated/WaterCup_Filled.fbx" id="34_w22hl"]
 [ext_resource type="PackedScene" uid="uid://30gupjx6gpct" path="res://Assets/FBX/Separated/WaterCup.fbx" id="35_j6xf7"]
 [ext_resource type="PackedScene" path="res://Scenes/Furniture/shelf.tscn" id="36_w56l1"]
+[ext_resource type="Script" uid="uid://d0mt54gv8nscw" path="res://Scripts/hidden.gd" id="38_b0cim"]
 [ext_resource type="AudioStream" uid="uid://dxldy35xyqi4m" path="res://Assets/Audios/neon.mp3" id="38_j6xf7"]
 [ext_resource type="AudioStream" uid="uid://4sly85axrgre" path="res://Assets/Audios/air_conditioner.mp3" id="39_72k1i"]
+[ext_resource type="PackedScene" uid="uid://b8nbxtx1d6jdg" path="res://Scenes/Furniture/white_board.tscn" id="43_r2rde"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vu6mp"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1041,114 +1043,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.5, 3, -22)
 [node name="Long Table2" parent="OpenSpace" unique_id=1022899109 instance=ExtResource("26_2bg4u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.478401, 0, 0)
 
-[node name="Desk Office A" parent="OpenSpace" unique_id=1647113314 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
-
-[node name="Desk Office A2" parent="OpenSpace" unique_id=1698194869 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -9)
-
-[node name="Desk Office A3" parent="OpenSpace" unique_id=1136364054 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -4)
-
-[node name="Desk Office A4" parent="OpenSpace" unique_id=1320086030 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -4.9999995)
-
-[node name="Desk Office A5" parent="OpenSpace" unique_id=450973423 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -8)
-
-[node name="Desk Office A6" parent="OpenSpace" unique_id=1969090025 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -0.9999995)
-
-[node name="Desk Office A8" parent="OpenSpace" unique_id=728119730 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 0)
-
-[node name="Desk Office A9" parent="OpenSpace" unique_id=1935789777 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -9)
-
-[node name="Desk Office A10" parent="OpenSpace" unique_id=1485306426 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -4)
-
-[node name="Desk Office A11" parent="OpenSpace" unique_id=403222251 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -5)
-
-[node name="Desk Office A12" parent="OpenSpace" unique_id=216574842 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -8)
-
-[node name="Desk Office A13" parent="OpenSpace" unique_id=1788632161 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -1)
-
-[node name="Desk Office A15" parent="OpenSpace" unique_id=594498918 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
-
-[node name="Desk Office A16" parent="OpenSpace" unique_id=851862644 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -9)
-
-[node name="Desk Office A17" parent="OpenSpace" unique_id=1188118940 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -4)
-
-[node name="Desk Office A18" parent="OpenSpace" unique_id=1447006384 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -5.0000005)
-
-[node name="Desk Office A19" parent="OpenSpace" unique_id=1177887410 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -8)
-
-[node name="Desk Office A20" parent="OpenSpace" unique_id=77183957 instance=ExtResource("4_vmy4a")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -1.0000002)
-
-[node name="Chair Office A" parent="OpenSpace" unique_id=1046223920 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, 0.2695989)
-
-[node name="Chair Office A2" parent="OpenSpace" unique_id=1412323613 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, 0.2695989)
-
-[node name="Chair Office A3" parent="OpenSpace" unique_id=1077552208 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, 0.2695989)
-
-[node name="Chair Office A4" parent="OpenSpace" unique_id=1481213464 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -3.730401)
-
-[node name="Chair Office A5" parent="OpenSpace" unique_id=116707897 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -3.730401)
-
-[node name="Chair Office A6" parent="OpenSpace" unique_id=1930784801 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -3.730401)
-
-[node name="Chair Office A7" parent="OpenSpace" unique_id=1036330942 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -7.730401)
-
-[node name="Chair Office A8" parent="OpenSpace" unique_id=614815312 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -7.730401)
-
-[node name="Chair Office A9" parent="OpenSpace" unique_id=2039482745 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -7.730401)
-
-[node name="Chair Office A10" parent="OpenSpace" unique_id=305974192 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.20377, 0, -1.3522224)
-
-[node name="Chair Office A11" parent="OpenSpace" unique_id=314875940 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -1.3522229)
-
-[node name="Chair Office A12" parent="OpenSpace" unique_id=1947931842 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -1.3522234)
-
-[node name="Chair Office A13" parent="OpenSpace" unique_id=1004220998 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -5.3522224)
-
-[node name="Chair Office A14" parent="OpenSpace" unique_id=220897613 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -5.352223)
-
-[node name="Chair Office A15" parent="OpenSpace" unique_id=1393380729 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -5.3522234)
-
-[node name="Chair Office A16" parent="OpenSpace" unique_id=64071631 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -9.352222)
-
-[node name="Chair Office A17" parent="OpenSpace" unique_id=1931418040 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -9.352222)
-
-[node name="Chair Office A18" parent="OpenSpace" unique_id=436913029 instance=ExtResource("16_7tjen")]
-transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -9.352222)
-
 [node name="Light5" parent="OpenSpace" unique_id=905305433 instance=ExtResource("7_uydrv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 3, -0.4368682)
 
@@ -1224,8 +1118,227 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 3, -8.436869)
 [node name="Light13" parent="OpenSpace" unique_id=150142000 instance=ExtResource("7_uydrv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 3, -8.436869)
 
-[node name="WhiteBoard_Big" parent="OpenSpace" unique_id=1969036479 instance=ExtResource("33_eyxhn")]
-transform = Transform3D(-6.9938224e-08, 0, 1, 0, 1.6, 0, -1.6, 0, -4.371139e-08, 25.628853, 1.3598369, -2.542134)
+[node name="Hidden" type="Node3D" parent="OpenSpace" unique_id=170187249 groups=["hide_desk"]]
+transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 0, 3.0135121, -9.002337)
+script = ExtResource("38_b0cim")
+
+[node name="Desk Office A" parent="OpenSpace/Hidden" unique_id=1835694583 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
+
+[node name="Desk Office A2" parent="OpenSpace/Hidden" unique_id=178224932 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -9)
+
+[node name="Desk Office A3" parent="OpenSpace/Hidden" unique_id=1983559821 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -4)
+
+[node name="Desk Office A4" parent="OpenSpace/Hidden" unique_id=1624220533 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -4.9999995)
+
+[node name="Desk Office A5" parent="OpenSpace/Hidden" unique_id=502498761 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -8)
+
+[node name="Desk Office A6" parent="OpenSpace/Hidden" unique_id=812478033 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -0.9999995)
+
+[node name="Desk Office A8" parent="OpenSpace/Hidden" unique_id=1088748510 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 0)
+
+[node name="Desk Office A9" parent="OpenSpace/Hidden" unique_id=1942180718 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -9)
+
+[node name="Desk Office A10" parent="OpenSpace/Hidden" unique_id=371871364 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -4)
+
+[node name="Desk Office A11" parent="OpenSpace/Hidden" unique_id=445000120 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -5)
+
+[node name="Desk Office A12" parent="OpenSpace/Hidden" unique_id=7025437 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -8)
+
+[node name="Desk Office A13" parent="OpenSpace/Hidden" unique_id=695093178 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -1)
+
+[node name="Desk Office A15" parent="OpenSpace/Hidden" unique_id=1456453185 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="Desk Office A16" parent="OpenSpace/Hidden" unique_id=1533211104 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -9)
+
+[node name="Desk Office A17" parent="OpenSpace/Hidden" unique_id=1089584031 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -4)
+
+[node name="Desk Office A18" parent="OpenSpace/Hidden" unique_id=2009739684 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -5.0000005)
+
+[node name="Desk Office A19" parent="OpenSpace/Hidden" unique_id=775809408 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -8)
+
+[node name="Desk Office A20" parent="OpenSpace/Hidden" unique_id=1815695579 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -1.0000002)
+
+[node name="Chair Office A" parent="OpenSpace/Hidden" unique_id=1298438337 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, 0.2695989)
+
+[node name="Chair Office A2" parent="OpenSpace/Hidden" unique_id=1955085044 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, 0.2695989)
+
+[node name="Chair Office A3" parent="OpenSpace/Hidden" unique_id=1922831661 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, 0.2695989)
+
+[node name="Chair Office A4" parent="OpenSpace/Hidden" unique_id=350602517 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -3.730401)
+
+[node name="Chair Office A5" parent="OpenSpace/Hidden" unique_id=1966975561 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -3.730401)
+
+[node name="Chair Office A6" parent="OpenSpace/Hidden" unique_id=844282253 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -3.730401)
+
+[node name="Chair Office A7" parent="OpenSpace/Hidden" unique_id=461992341 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -7.730401)
+
+[node name="Chair Office A8" parent="OpenSpace/Hidden" unique_id=1923850116 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -7.730401)
+
+[node name="Chair Office A9" parent="OpenSpace/Hidden" unique_id=574337697 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -7.730401)
+
+[node name="Chair Office A10" parent="OpenSpace/Hidden" unique_id=1644343515 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.20377, 0, -1.3522224)
+
+[node name="Chair Office A11" parent="OpenSpace/Hidden" unique_id=1859105207 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -1.3522229)
+
+[node name="Chair Office A12" parent="OpenSpace/Hidden" unique_id=1059700500 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -1.3522234)
+
+[node name="Chair Office A13" parent="OpenSpace/Hidden" unique_id=870698954 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -5.3522224)
+
+[node name="Chair Office A14" parent="OpenSpace/Hidden" unique_id=1457858908 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -5.352223)
+
+[node name="Chair Office A15" parent="OpenSpace/Hidden" unique_id=925232072 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -5.3522234)
+
+[node name="Chair Office A16" parent="OpenSpace/Hidden" unique_id=95580096 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -9.352222)
+
+[node name="Chair Office A17" parent="OpenSpace/Hidden" unique_id=610299291 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -9.352222)
+
+[node name="Chair Office A18" parent="OpenSpace/Hidden" unique_id=349051969 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -9.352222)
+
+[node name="Visible" type="Node3D" parent="OpenSpace" unique_id=62064657]
+
+[node name="Desk Office A" parent="OpenSpace/Visible" unique_id=1647113314 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
+
+[node name="Desk Office A2" parent="OpenSpace/Visible" unique_id=1698194869 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -9)
+
+[node name="Desk Office A3" parent="OpenSpace/Visible" unique_id=1136364054 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -4)
+
+[node name="Desk Office A4" parent="OpenSpace/Visible" unique_id=1320086030 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -4.9999995)
+
+[node name="Desk Office A5" parent="OpenSpace/Visible" unique_id=450973423 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, -8)
+
+[node name="Desk Office A6" parent="OpenSpace/Visible" unique_id=1969090025 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 30, 0, -0.9999995)
+
+[node name="Desk Office A8" parent="OpenSpace/Visible" unique_id=728119730 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 0)
+
+[node name="Desk Office A9" parent="OpenSpace/Visible" unique_id=1935789777 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -9)
+
+[node name="Desk Office A10" parent="OpenSpace/Visible" unique_id=1485306426 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -4)
+
+[node name="Desk Office A11" parent="OpenSpace/Visible" unique_id=403222251 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -5)
+
+[node name="Desk Office A12" parent="OpenSpace/Visible" unique_id=216574842 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -8)
+
+[node name="Desk Office A13" parent="OpenSpace/Visible" unique_id=1788632161 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 33, 0, -1)
+
+[node name="Desk Office A15" parent="OpenSpace/Visible" unique_id=594498918 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="Desk Office A16" parent="OpenSpace/Visible" unique_id=851862644 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -9)
+
+[node name="Desk Office A17" parent="OpenSpace/Visible" unique_id=1188118940 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -4)
+
+[node name="Desk Office A18" parent="OpenSpace/Visible" unique_id=1447006384 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -5.0000005)
+
+[node name="Desk Office A19" parent="OpenSpace/Visible" unique_id=1177887410 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -8)
+
+[node name="Desk Office A20" parent="OpenSpace/Visible" unique_id=77183957 instance=ExtResource("4_vmy4a")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 36, 0, -1.0000002)
+
+[node name="Chair Office A" parent="OpenSpace/Visible" unique_id=1046223920 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, 0.2695989)
+
+[node name="Chair Office A2" parent="OpenSpace/Visible" unique_id=1412323613 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, 0.2695989)
+
+[node name="Chair Office A3" parent="OpenSpace/Visible" unique_id=1077552208 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, 0.2695989)
+
+[node name="Chair Office A4" parent="OpenSpace/Visible" unique_id=1481213464 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -3.730401)
+
+[node name="Chair Office A5" parent="OpenSpace/Visible" unique_id=116707897 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -3.730401)
+
+[node name="Chair Office A6" parent="OpenSpace/Visible" unique_id=1930784801 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -3.730401)
+
+[node name="Chair Office A7" parent="OpenSpace/Visible" unique_id=1036330942 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 29.778574, 0, -7.730401)
+
+[node name="Chair Office A8" parent="OpenSpace/Visible" unique_id=614815312 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 32.778572, 0, -7.730401)
+
+[node name="Chair Office A9" parent="OpenSpace/Visible" unique_id=2039482745 instance=ExtResource("16_7tjen")]
+transform = Transform3D(-0.9965278, 0, -0.08326051, 0, 1, 0, 0.08326051, 0, -0.9965278, 35.778572, 0, -7.730401)
+
+[node name="Chair Office A10" parent="OpenSpace/Visible" unique_id=305974192 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.20377, 0, -1.3522224)
+
+[node name="Chair Office A11" parent="OpenSpace/Visible" unique_id=314875940 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -1.3522229)
+
+[node name="Chair Office A12" parent="OpenSpace/Visible" unique_id=1947931842 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -1.3522234)
+
+[node name="Chair Office A13" parent="OpenSpace/Visible" unique_id=1004220998 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -5.3522224)
+
+[node name="Chair Office A14" parent="OpenSpace/Visible" unique_id=220897613 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -5.352223)
+
+[node name="Chair Office A15" parent="OpenSpace/Visible" unique_id=1393380729 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -5.3522234)
+
+[node name="Chair Office A16" parent="OpenSpace/Visible" unique_id=64071631 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 36.203773, 0, -9.352222)
+
+[node name="Chair Office A17" parent="OpenSpace/Visible" unique_id=1931418040 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 33.203773, 0, -9.352222)
+
+[node name="Chair Office A18" parent="OpenSpace/Visible" unique_id=436913029 instance=ExtResource("16_7tjen")]
+transform = Transform3D(0.9965278, 0, 0.08326042, 0, 1, 0, -0.08326042, 0, 0.9965278, 30.203773, 0, -9.352222)
 
 [node name="DirectorOffice" type="Node3D" parent="." unique_id=2038156217]
 
@@ -1595,3 +1708,6 @@ autoplay = true
 stream = ExtResource("39_72k1i")
 volume_db = -20.0
 autoplay = true
+
+[node name="WhiteBoard_Big" parent="." unique_id=441921721 instance=ExtResource("43_r2rde")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 25.6296, 1.5077032, -2.9284346)

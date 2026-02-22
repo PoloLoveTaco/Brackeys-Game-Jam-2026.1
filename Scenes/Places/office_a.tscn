@@ -103,7 +103,7 @@ environment = SubResource("Environment_xodqj")
 [node name="Player" parent="." unique_id=1870830449 instance=ExtResource("1_no04e")]
 transform = Transform3D(-0.023804009, 0, 0.99971664, 0, 1, 0, -0.99971664, 0, -0.023804009, 6.9072022, 2.3841858e-07, 3.0027223)
 can_jump = false
-base_speed = 3.0
+base_speed = 4.0
 
 [node name="Couloir1" type="Node3D" parent="." unique_id=1661101995]
 
@@ -1526,7 +1526,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 6, 3
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14, 3, -53.5)
 
 [node name="Chair Office A3" parent="Global" unique_id=598917035 instance=ExtResource("16_7tjen")]
-transform = Transform3D(-0.38365063, 0, 0.923478, 0, 2.252881, 0, -0.923478, 0, -0.38365063, 6.300066, 0, -40.059544)
+transform = Transform3D(-0.3836506, 0, 0.92347795, 0, 2.252881, 0, -0.92347795, 0, -0.3836506, 6.300066, 0, -40.059544)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Global" unique_id=596681797]
 root_node = NodePath("../../DirectorOffice")

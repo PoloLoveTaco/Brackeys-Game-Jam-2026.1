@@ -32,6 +32,10 @@ task_item=""
 player=""
 my_pc=""
 return_pc=""
+hide_carpet=""
+move_chair=""
+microwave_anomaly=""
+hide_painting_anomaly=""
 
 [input]
 

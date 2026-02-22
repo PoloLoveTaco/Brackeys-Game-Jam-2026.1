@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cosc44mkdadf"]
 
 [ext_resource type="Texture2D" uid="uid://buq6kt63glv1l" path="res://Assets/Textures/palette1.png" id="1_6gw8t"]
+[ext_resource type="Script" uid="uid://w8tm18kngfac" path="res://Scripts/microwave_anomaly.gd" id="1_rn2cv"]
 [ext_resource type="PackedScene" uid="uid://cn33n361xhbc1" path="res://Assets/FBX/Separated/Microwave_Old_B.fbx" id="2_6gw8t"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xthpt"]
@@ -46,7 +47,8 @@ shadow_mesh = SubResource("ArrayMesh_sq8p7")
 [sub_resource type="BoxShape3D" id="BoxShape3D_rn2cv"]
 size = Vector3(0.77197266, 0.49221802, 0.5032425)
 
-[node name="Microwave_Old" type="StaticBody3D" unique_id=1715648344]
+[node name="Microwave_Old" type="StaticBody3D" unique_id=1715648344 groups=["microwave_anomaly"]]
+script = ExtResource("1_rn2cv")
 
 [node name="Microwave_Old" type="MeshInstance3D" parent="." unique_id=1508380794]
 mesh = SubResource("ArrayMesh_g8k3y")

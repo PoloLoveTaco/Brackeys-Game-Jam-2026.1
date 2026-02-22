@@ -28,8 +28,10 @@ func on_step_finished(step_index: int):
 	anomaly_triggered.emit()
 	
 func on_task_finished():
-	completed_tasks_count += 1
 	task_index += 1
+	if task_index >= tasks.size():
+		return
+	completed_tasks_count += 1
 	current_task = tasks[task_index]
 	current_task.task_completed.connect(on_task_finished)
 	task_ui_update.emit()

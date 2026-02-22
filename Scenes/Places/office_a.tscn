@@ -39,7 +39,7 @@
 [ext_resource type="PackedScene" uid="uid://f0sa0x3dps7n" path="res://Assets/FBX/Separated/WhiteBoard_Big.fbx" id="33_eyxhn"]
 [ext_resource type="PackedScene" uid="uid://bikrxmvpbqf3p" path="res://Assets/FBX/Separated/WaterCup_Filled.fbx" id="34_w22hl"]
 [ext_resource type="PackedScene" uid="uid://30gupjx6gpct" path="res://Assets/FBX/Separated/WaterCup.fbx" id="35_j6xf7"]
-[ext_resource type="PackedScene" uid="uid://b1urv0f4wqejw" path="res://Scenes/Furniture/shelf.tscn" id="36_w56l1"]
+[ext_resource type="PackedScene" path="res://Scenes/Furniture/shelf.tscn" id="36_w56l1"]
 [ext_resource type="AudioStream" uid="uid://dxldy35xyqi4m" path="res://Assets/Audios/neon.mp3" id="38_j6xf7"]
 [ext_resource type="AudioStream" uid="uid://4sly85axrgre" path="res://Assets/Audios/air_conditioner.mp3" id="39_72k1i"]
 
@@ -580,46 +580,202 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.38
 script = ExtResource("17_lf88a")
 
 [node name="Painting2" parent="RestRoom/HidePainting" unique_id=1850793803 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4810562, -0.35831916, 0)
+transform = Transform3D(0.89407605, -0.44791514, 4.630081e-09, 0.44791514, 0.89407605, -1.9578993e-08, 4.630081e-09, 1.9578993e-08, 1, 1.4810562, -0.35831916, 0)
 
 [node name="Painting3" parent="RestRoom/HidePainting" unique_id=896741504 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0461273, 0.74152184, 9.536743e-07)
+transform = Transform3D(0.92069566, -0.39028126, 3.4665035e-09, 0.39028126, 0.92069566, -1.7059735e-08, 3.4665035e-09, 1.7059735e-08, 1, -1.0461273, 0.74152184, 1.9073486e-06)
 
 [node name="Painting4" parent="RestRoom/HidePainting" unique_id=1053038356 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1569176, -0.6854137, 1.9073486e-06)
+transform = Transform3D(0.42656872, -0.9044552, 2.5065477e-08, 0.9044552, 0.42656872, -3.9534992e-08, 2.5065477e-08, 3.9534992e-08, 1, -1.1569176, -0.6854137, 2.861023e-06)
 
 [node name="Painting5" parent="RestRoom/HidePainting" unique_id=1299855455 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8265934, -1.181968, 1.9073486e-06)
+transform = Transform3D(0.97160697, 0.23660074, 1.2410979e-09, -0.23660074, 0.97160697, 1.0342147e-08, 1.2410979e-09, -1.0342147e-08, 1, 0.8265934, -1.181968, 1.9073486e-06)
 
 [node name="Painting6" parent="RestRoom/HidePainting" unique_id=46961502 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2573509, 0.76772237, 1.9073486e-06)
+transform = Transform3D(0.7491985, 0.6623455, 1.0962882e-08, -0.6623455, 0.7491985, 2.8952043e-08, 1.0962882e-08, -2.8952043e-08, 1, 1.2573509, 0.76772237, 1.9073486e-06)
 
 [node name="Painting7" parent="RestRoom/HidePainting" unique_id=1797862277 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5330067, 1.0428205, 1.9073486e-06)
+transform = Transform3D(0.9662233, 0.25770622, 1.4764261e-09, -0.25770622, 0.9662233, 1.1264697e-08, 1.4764261e-09, -1.1264697e-08, 1, 3.5330067, 1.0428205, 1.9073486e-06)
 
 [node name="Painting8" parent="RestRoom/HidePainting" unique_id=1462512930 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.529459, -0.70546675, 1.9073486e-06)
+transform = Transform3D(-0.95268804, 0.3039498, 8.53547e-08, -0.3039498, -0.95268804, 1.3286068e-08, 8.53547e-08, -1.3286068e-08, 1, 4.529459, -0.70546675, 1.9073486e-06)
+
+[node name="Painting16" parent="RestRoom/HidePainting" unique_id=1463185603 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-5.2136357e-08, 2.5798336e-08, -1, -0.59019715, 0.80725914, 5.1596672e-08, 0.80725914, 0.59019715, -2.686145e-08, 5.88472, -0.8321445, 0.9417181)
+
+[node name="Painting33" parent="RestRoom/HidePainting" unique_id=1240222383 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-3.7784023e-08, 2.1978469e-08, 1, 0.50280875, 0.8643977, 0, -0.8643977, 0.50280875, -4.371139e-08, -5.906166, -0.8321445, 0.94172096)
+
+[node name="Painting34" parent="RestRoom/HidePainting" unique_id=911309701 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.1939185e-08, -1.2320312e-08, 1, -0.28185588, 0.95945674, 0, -0.95945674, -0.28185588, -4.371139e-08, -5.906166, 0.72095776, 2.0584044)
+
+[node name="Painting35" parent="RestRoom/HidePainting" unique_id=977525255 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.0495546e-08, -1.6455887e-08, 1, -0.3764668, 0.9264301, 0, -0.9264301, -0.3764668, -4.371139e-08, -5.906166, -0.17190158, 3.136434)
+
+[node name="Painting36" parent="RestRoom/HidePainting" unique_id=904998851 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.2700037e-08, -9.348375e-09, 1, -0.21386589, 0.976863, 0, -0.976863, -0.21386589, -4.371139e-08, -5.906166, -0.823367, 4.8492036)
+
+[node name="Painting37" parent="RestRoom/HidePainting" unique_id=582463720 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.1143718e-08, 1.4760756e-08, 1, 0.33768675, 0.94125855, 0, -0.94125855, 0.33768675, -4.371139e-08, -5.906166, 0.56715226, 4.727208)
+
+[node name="Painting38" parent="RestRoom/HidePainting" unique_id=2034446537 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.1126945e-08, -1.4807423e-08, 1, -0.33875436, 0.9408749, 0, -0.9408749, -0.33875436, -4.371139e-08, -5.906166, 0.8687074, 6.226528)
+
+[node name="Painting39" parent="RestRoom/HidePainting" unique_id=462426732 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-3.881466e-08, 2.0102425e-08, 1, 0.45988986, 0.887976, 0, -0.887976, 0.45988986, -4.371139e-08, -5.906166, -0.12939966, 6.9353695)
+
+[node name="Painting40" parent="RestRoom/HidePainting" unique_id=1903627987 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.2256705e-08, 1.1182852e-08, 1, 0.25583383, 0.96672076, 0, -0.96672076, 0.25583383, -4.371139e-08, -5.906166, -0.9687424, 5.945695)
+
+[node name="Painting17" parent="RestRoom/HidePainting" unique_id=2053916536 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.88472, 0.41299498, 0.6694546)
+
+[node name="Painting18" parent="RestRoom/HidePainting" unique_id=1243190258 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.781648e-08, 1.849397e-08, -1, -0.42309275, 0.9060864, 3.698794e-08, 0.9060864, 0.42309275, -3.5501202e-08, 5.88472, 1.0356374, 2.4036655)
+
+[node name="Painting19" parent="RestRoom/HidePainting" unique_id=1365502882 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-1.1316813e-07, -3.5325098e-08, -1, 0.80814403, -0.5889849, -7.0650195e-08, -0.5889849, -0.80814403, 9.520208e-08, 5.88472, -0.3955388, 2.25202)
+
+[node name="Painting20" parent="RestRoom/HidePainting" unique_id=836129647 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.532222e-08, 1.1757063e-08, -1, -0.26897025, 0.9631485, 2.3514122e-08, 0.9631485, 0.26897025, -4.048973e-08, 5.88472, 1.0810122, 4.4721136)
+
+[node name="Painting21" parent="RestRoom/HidePainting" unique_id=1053822183 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.815198e-08, -1.919609e-08, -1, 0.43915534, 0.89841115, -3.839218e-08, 0.89841115, -0.43915534, -3.4830208e-08, 5.88472, -0.49843502, 5.009189)
+
+[node name="Painting22" parent="RestRoom/HidePainting" unique_id=1501798608 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-6.756259e-08, 3.8939163e-08, -1, -0.8908242, 0.45434812, 7.7878326e-08, 0.45434812, 0.8908242, 3.9910155e-09, 5.88472, -0.92498386, 7.326228)
+
+[node name="Painting23" parent="RestRoom/HidePainting" unique_id=1644164476 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.430183e-08, -7.1602786e-09, -1, 0.16380808, 0.9864922, -1.4320557e-08, 0.9864922, -0.16380808, -4.2530502e-08, 5.88472, -0.037290454, 6.42925)
+
+[node name="Painting24" parent="RestRoom/HidePainting" unique_id=634653861 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.88472, 1.030915, 5.9034534)
+
+[node name="Painting26" parent="RestRoom/HidePainting" unique_id=1423118296 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-4.5831488e-08, 1.34480524e-08, -1, -0.30765557, 0.9514978, 2.6896105e-08, 0.9514978, 0.30765557, -3.947119e-08, 5.88472, 0.09533024, 7.9935875)
 
 [node name="Painting15" parent="RestRoom/HidePainting" unique_id=1324303877 instance=ExtResource("7_vl3i2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.150717, -1.2625343, 1.9073486e-06)
 
 [node name="Painting9" parent="RestRoom/HidePainting" unique_id=1199429768 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.033001, 0.17140794, 1.9073486e-06)
+transform = Transform3D(-0.0015533401, -0.9999988, 4.3779284e-08, 0.9999988, -0.0015533401, -4.3711335e-08, 4.3779284e-08, 4.3711335e-08, 1, 5.033001, 0.17140794, 1.9073486e-06)
 
 [node name="Painting10" parent="RestRoom/HidePainting" unique_id=2116249252 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3626175, 1.0551963, 1.9073486e-06)
+transform = Transform3D(0.9222077, 0.38669488, 3.4004088e-09, -0.38669488, 0.9222077, 1.690297e-08, 3.4004088e-09, -1.690297e-08, 1, 5.3626175, 1.0551963, 1.9073486e-06)
 
 [node name="Painting11" parent="RestRoom/HidePainting" unique_id=499658577 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6253586, 1.0610504, 2.861023e-06)
+transform = Transform3D(0.9915833, 0.12947057, 3.6790482e-10, -0.12947057, 0.9915833, 5.6593383e-09, 3.6790482e-10, -5.6593383e-09, 1, -3.6253586, 1.0610504, 3.8146973e-06)
+
+[node name="Painting25" parent="RestRoom/HidePainting" unique_id=1976781645 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.97394824, 0.2267703, -9.912444e-09, 0, -4.371139e-08, -1, -0.2267703, 0.97394824, -4.257263e-08, -3.5263329, 1.4321811, 1.6518064)
+
+[node name="Painting27" parent="RestRoom/HidePainting" unique_id=493718336 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.8241954, -0.5663055, 2.4754002e-08, 0, -4.371139e-08, -1, 0.5663055, 0.8241954, -3.6026723e-08, -1.7270889, 1.4321811, 2.2147675)
+
+[node name="Painting28" parent="RestRoom/HidePainting" unique_id=2030549064 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.7610856, -0.6486514, 2.8353455e-08, 0, -4.371139e-08, -1, 0.6486514, 0.7610856, -3.326811e-08, -3.8282814, 1.4321811, 2.6736884)
+
+[node name="Painting29" parent="RestRoom/HidePainting" unique_id=673981679 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.8565374, -0.5160849, 2.2558789e-08, 0, -4.371139e-08, -1, 0.5160849, 0.8565374, -3.744044e-08, -2.9768333, 1.4321811, 4.1372156)
+
+[node name="Painting30" parent="RestRoom/HidePainting" unique_id=110900125 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.75649303, -0.6540017, 2.8587325e-08, 0, -4.371139e-08, -1, 0.6540017, 0.75649303, -3.3067362e-08, -4.7481537, 1.4321811, 5.6393013)
+
+[node name="Painting52" parent="RestRoom/HidePainting" unique_id=2093042298 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.67919797, -0.73395514, 3.20822e-08, 0, -4.371139e-08, -1, 0.73395514, 0.67919797, -2.9688687e-08, -3.6553802, 1.4321811, 6.843643)
+
+[node name="Painting53" parent="RestRoom/HidePainting" unique_id=2039827104 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-0.2319346, -0.97273135, -4.251944e-08, 0, -4.371139e-08, 1, -0.97273135, 0.2319346, 1.0138184e-08, -1.7982826, -1.5395575, 6.8436437)
+
+[node name="Painting54" parent="RestRoom/HidePainting" unique_id=7351507 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.97662735, 0.21493988, 9.395321e-09, 0, -4.371139e-08, 1, 0.21493988, -0.97662735, -4.2689738e-08, -0.49199295, -1.4978223, 4.717692)
+
+[node name="Painting55" parent="RestRoom/HidePainting" unique_id=1935594727 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9282523, -0.37195116, -1.6258502e-08, 0, -4.371139e-08, 1, -0.37195116, -0.9282523, -4.0575195e-08, -3.3069763, -1.4978223, 1.9341078)
+
+[node name="Painting56" parent="RestRoom/HidePainting" unique_id=1812528739 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -4.028572, -1.4978223, 5.9817314)
+
+[node name="Painting57" parent="RestRoom/HidePainting" unique_id=675782294 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.6765175, -1.4978224, 2.7205496)
+
+[node name="Painting58" parent="RestRoom/HidePainting" unique_id=1795933738 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.02403083, 0.9997112, 4.3698765e-08, 0, -4.371139e-08, 1, 0.9997112, -0.02403083, -1.050421e-09, -1.024807, -1.4978224, 1.4541821)
+
+[node name="Painting59" parent="RestRoom/HidePainting" unique_id=1271496064 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9326012, -0.3609085, -1.5775813e-08, 0, -4.371139e-08, 1, -0.3609085, -0.9326012, -4.0765293e-08, 0.9780655, -1.4978224, 5.4852076)
+
+[node name="Painting60" parent="RestRoom/HidePainting" unique_id=911020675 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.94154114, 0.33689806, 1.47262815e-08, 0, -4.371139e-08, 1, 0.33689806, -0.94154114, -4.115607e-08, 2.131853, -1.4978224, 2.4188542)
+
+[node name="Painting61" parent="RestRoom/HidePainting" unique_id=1472822233 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.69587517, -0.7181627, -3.1391888e-08, 0, -4.371139e-08, 1, -0.7181627, -0.69587517, -3.0417674e-08, 4.31061, -1.4978224, 1.258069)
+
+[node name="Painting62" parent="RestRoom/HidePainting" unique_id=1437116874 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.836707, 0.5476508, 2.3938577e-08, 0, -4.371139e-08, 1, 0.5476508, -0.836707, -3.6573624e-08, 3.2775269, -1.4978224, 4.580473)
+
+[node name="Painting63" parent="RestRoom/HidePainting" unique_id=1317053338 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.5544523, 0.8322155, 3.6377294e-08, 0, -4.371139e-08, 1, 0.8322155, -0.5544523, -2.4235879e-08, 0.0044841766, -1.4978224, 7.806643)
+
+[node name="Painting64" parent="RestRoom/HidePainting" unique_id=852515407 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 5.362236, -1.4978224, 7.166467)
+
+[node name="Painting65" parent="RestRoom/HidePainting" unique_id=365056501 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.6360513, -0.7716468, -3.372975e-08, 0, -4.371139e-08, 1, -0.7716468, -0.6360513, -2.7802686e-08, -2.2503128, -1.4978226, 5.12136)
+
+[node name="Painting66" parent="RestRoom/HidePainting" unique_id=1974904955 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9935025, 0.11381013, 4.974799e-09, 0, -4.371139e-08, 1, 0.11381013, -0.9935025, -4.3427374e-08, -4.6339912, -1.4978224, 9.136337)
+
+[node name="Painting67" parent="RestRoom/HidePainting" unique_id=1920044932 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.92097473, -0.3896223, -1.7030931e-08, 0, -4.371139e-08, 1, -0.3896223, -0.92097473, -4.0257085e-08, -1.1814384, -1.4978226, 8.66432)
+
+[node name="Painting31" parent="RestRoom/HidePainting" unique_id=2047221209 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.94300795, 0.33277017, -1.4545846e-08, 0, -4.371139e-08, -1, -0.33277017, 0.94300795, -4.1220186e-08, -2.3227386, 1.4321811, 5.917664)
+
+[node name="Painting32" parent="RestRoom/HidePainting" unique_id=1464442841 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(-0.33010256, -0.94394505, 4.126115e-08, 0, -4.371139e-08, -1, 0.94394505, -0.33010256, 1.4429241e-08, -0.94416046, 1.4321814, 3.9371047)
+
+[node name="Painting41" parent="RestRoom/HidePainting" unique_id=31487799 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9868726, -0.16150047, 7.05941e-09, 0, -4.371139e-08, -1, 0.16150047, 0.9868726, -4.313757e-08, 0.44548798, 1.4321814, 0.96210194)
+
+[node name="Painting42" parent="RestRoom/HidePainting" unique_id=781346262 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.85499346, -0.51863897, 2.2670433e-08, 0, -4.371139e-08, -1, 0.51863897, 0.85499346, -3.737295e-08, 1.8017483, 1.4321814, 2.5390563)
+
+[node name="Painting43" parent="RestRoom/HidePainting" unique_id=107594547 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.6102695, 1.4321814, 0.71649265)
+
+[node name="Painting44" parent="RestRoom/HidePainting" unique_id=403521183 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.68309593, 1.4321814, 4.63726)
+
+[node name="Painting45" parent="RestRoom/HidePainting" unique_id=1313019385 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.78154224, -0.6238523, 2.726945e-08, 0, -4.371139e-08, -1, 0.6238523, 0.78154224, -3.4162298e-08, 3.9246292, 1.4321814, 2.6456761)
+
+[node name="Painting46" parent="RestRoom/HidePainting" unique_id=2100711756 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.78744125, 1.4321814, 5.692735)
+
+[node name="Painting47" parent="RestRoom/HidePainting" unique_id=1343921842 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9703168, -0.24183723, 1.0571042e-08, 0, -4.371139e-08, -1, 0.24183723, 0.9703168, -4.2413895e-08, 1.3430634, 1.4321814, 6.617556)
+
+[node name="Painting48" parent="RestRoom/HidePainting" unique_id=58200140 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.9798813, 1.4321814, 4.646975)
+
+[node name="Painting49" parent="RestRoom/HidePainting" unique_id=2039512151 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9686916, 0.24826725, -1.0852106e-08, 0, -4.371139e-08, -1, -0.24826725, 0.9686916, -4.2342855e-08, 4.881935, 1.4321816, 3.883894)
+
+[node name="Painting50" parent="RestRoom/HidePainting" unique_id=1823763328 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.7930026, -0.60921824, 2.6629776e-08, 0, -4.371139e-08, -1, 0.60921824, 0.7930026, -3.4663245e-08, 4.2368927, 1.4321818, 6.00189)
+
+[node name="Painting51" parent="RestRoom/HidePainting" unique_id=1851573343 instance=ExtResource("7_vl3i2")]
+transform = Transform3D(0.9228678, 0.38511693, -1.6833996e-08, 0, -4.371139e-08, -1, -0.38511693, 0.9228678, -4.033983e-08, 5.0142326, 1.4321818, 7.5989275)
 
 [node name="Painting12" parent="RestRoom/HidePainting" unique_id=1968849775 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.113144, 0.43296504, 3.8146973e-06)
+transform = Transform3D(0.5514566, -0.8342036, 1.9606455e-08, 0.8342036, 0.5514566, -3.6464197e-08, 1.9606455e-08, 3.6464197e-08, 1, -5.113144, 0.43296504, 4.7683716e-06)
 
 [node name="Painting13" parent="RestRoom/HidePainting" unique_id=517963966 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9498749, -0.55328, 4.7683716e-06)
+transform = Transform3D(0.71781045, 0.6962386, 1.23348975e-08, -0.6962386, 0.71781045, 3.0433554e-08, 1.23348975e-08, -3.0433554e-08, 1, -3.9498749, -0.55328, 5.722046e-06)
 
 [node name="Painting14" parent="RestRoom/HidePainting" unique_id=2139152407 instance=ExtResource("7_vl3i2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.13715, -1.1557475, 5.722046e-06)
+transform = Transform3D(0.9910532, 0.13346729, 3.9107562e-10, -0.13346729, 0.9910532, 5.8340404e-09, 3.9107562e-10, -5.8340404e-09, 1, -5.13715, -1.1557475, 6.67572e-06)
 
 [node name="Painting" parent="RestRoom" unique_id=644460111 instance=ExtResource("7_vl3i2")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.388, 1.5548439, -32)
